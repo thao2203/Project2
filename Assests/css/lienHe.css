@@ -1,0 +1,125 @@
+/* Begin Banner */
+
+.bg-title {
+    background: url(../img/bg_title.png) center bottom no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bg-title h1 {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    font-family: Sriracha;
+    font-size: 30px;
+    color: #fffc00;
+    font-weight: 400;
+    text-align: center;
+}
+
+.bg-title #breadcrumbs {
+    display: block;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    color: #FFF;
+}
+
+.bg-title #breadcrumbs a {
+    color: #FFF;
+}
+
+.clfw {
+    width: 100%!important;
+    clear: both!important;
+    display: block!important;
+    height: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+}
+/* End Banner */
+@media only screen and (max-width: 1000px){
+    body.css-system .css-all-NdLienHe p {
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 5000px) and (min-width: 1000px){
+    body.css-system .css-left-content{
+        width: 50%;
+    }
+    body.css-system .css-right-content{ 
+        width: 50%;
+    }
+}
+
+/* Begin content */
+h2{
+    color: #c00a27;
+}
+
+.css-all-NdChinhSach p{
+    margin: 10px 0;
+}
+
+body.css-system .css-all-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.dvls_result_item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dvls_result_thumb {
+    width: 60px;
+    float: left;
+    margin: 0;
+}
+
+body .dvls_result_wrap img {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.dvls_result_infor {
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.dvls_result_infor p {
+    margin: 0 0 5px;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.dvls_result_wrap .dvls_result_item:hover a, 
+.dvls_result_wrap .dvls_result_item.active a {
+    color: #fffc00;
+}
+
+/* .dvls_result_wrap .dvls_result_item:hover, 
+.dvls_result_wrap .dvls_result_item.active {
+    background: #c00a27;
+    color: #FFF;
+    position: relative;
+} */
+
+.dvls_result_infor .large_map {
+    color: #c00a27;
+    position: relative;
+}
+
+.dvls_result_infor .large_map:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background: url(../img/bando.png) bottom left no-repeat;
+}
+
+
+/* End content */

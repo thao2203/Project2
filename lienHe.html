@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assests/css/base.css">
+    <link rel="stylesheet" href="./Assests/css/lienHe.css">
+    <script src="https://kit.fontawesome.com/974cf27236.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="kingComposer css-system">
+    <!-- Begin Header -->
+    <section id="header" class="elm css-bg-a9001b row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-wLogo col-sm-4 column col-sm-4">
+                    <div class="col-container">
+                        <div class=" elm css-img shortcode single_image logo">
+                            <a href="trangChu.html" title="Trang chủ - Pizza Express" target="_self">
+                                <img src="./Assests/img/logo.png" class="lazyLoaded" alt="Pizza Express Logo">
+                            </a>
+                        </div>
+                        <div class="elm css-btnLogo row row_inner">
+                            <div class="elm css-btnLogo1 col-sm-12 column_inner col-sm-12">
+                                <div class="wrapper col-inner-container">
+                                    <div class="elm css-btnLogo2 rawCode">
+                                        <button type="button" class="btn menu_btn" data-toggle="modal"
+                                            data-target="#dc_menu"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-textHeader col-sm-4 column col-sm-4">
+                    <div class="col-container">
+                        <div class="elm css-textHeader1 text_block">
+                            <span><a href="./dangKy.html">Đăng Ký</a></span>
+                            <span> | </span>
+                            <span><a href="./dangNhap.html">Đăng Nhập</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-gioHang col-sm-4 column col-sm-4 cart_count">
+                    <div class="col-container">
+                        <div class="widget widget_nav_menu elm">
+                            <div class="menu-cart-container">
+                                <a href="giohang.html" title="Giỏ hàng" class=" cart-gioHang" style="float: right;">
+                                    Giỏ hàng:      
+                                    <span id="itemCount" style="display: inline; font-size: 12px;">1</span>
+                                    <i class="fa fa-cart-arrow-down" style="margin-left: 10px;"></i>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Begin Menu -->
+    <nav id="menu" class="to-top elm css-bgc00a27 row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-menu col-sm-6 column menu_top">
+                    <div class="col-container">
+                        <div class="elm css-247 text_block">
+                            <p>Gọi điện ngay - Ship liền tay (24/7)</p>
+                        </div>
+                        <div class="elm css-tel">
+                            <a href="tel:0334618813" class="button menu_call_btn" target="_self" title="Tổng Đài Pizza"
+                                onclick="">
+                                <i class="fas fa-mobile-alt"></i>
+                                " (033) 4.618.813"
+                            </a>
+                        </div>
+                        <div class="widget widget_nav_menu elm css-menu1">
+                            <div class="menu-menu-container">
+                                <ul id="menu-menu" class="menu">
+                                    <li id="menu-item-74"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2 current_page_item menu-item-74">
+                                        <a href="trangChu.html" aria-current="page">Trang chủ</a>
+                                    </li>
+                                    <li id="menu-item-208"
+                                        class="thucdon menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-208">
+                                        <a href="thucDon.html" aria-current="page">Thực đơn</a>
+                                    </li>
+                                    <li id="menu-item-78"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78">
+                                        <a href="khuyenMai.html">Khuyến mại</a>
+                                    </li>
+                                    <li id="menu-item-75"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menuitem-75">
+                                        <a href="chinhSach.html">Chính sách</a>
+                                    </li>
+                                    <li id="menu-item-83"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-83">
+                                        <a href="blog.html">Blog</a>
+                                    </li>
+                                    <li id="menu-item-79"
+                                        class="current-menu-item menu-item menu-item-type-post menu-item-object-page menu-item-79">
+                                        <a href="lienHe.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-right-menu col-sm-6 column col-sm-6">
+                    <div class="col-container">
+                        <div class="elm css-right-247 text_block">
+                            <p>Gọi điện ngay - Ship liền tay (24/7)</p>
+                        </div>
+                        <div class="elm css-right-tel">
+                            <a href="tel:0334618813" class="button menu_call_btn" target="_self"
+                                title="Đặt hàng ngay - Pizza Express" onclick="">
+                                <i class="fas fa-mobile-alt"></i>
+                                0334.618.813
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Menu -->
+
+    <!-- Begin Banner -->
+    <section class="elm row bg-title">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <h1>Liên hệ</h1>
+                <div id="breadcrumbs">
+                    <span>
+                        <span>
+                            <a href="./trangChu.html">Trang chủ</a> / <span class="breadcrumb_last">Liên hệ</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner -->
+
+    <div class="clfw"></div>
+
+    <!-- Begin content -->
+    <section class="elm css-all-content row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-left-content col-sm-4 column col-sm-4">
+                    <div class="col-container">
+                        <div class="elm css-text-titleLeft title-wrap">
+                            <h2 class="title">CÔNG TY TNHH PIZZA EXPRESS VIỆT NAM</h2>
+                        </div>
+                        <div class="elm css-all-NdLienHe text_block">
+                            <p>
+                                <span style="font-size: 12pt;">
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i> Để đặt bánh pizza, vui lòng liên hệ tổng đài số: 024.36.888.777 
+                                </span>
+                            </p>
+                            <p>
+                                <span style="font-size: 12pt;">
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i> Để phản ánh chất lượng dịch vụ, vui lòng gọi số: 0989.139.565  
+                                </span>
+                            </p>
+                            <p>
+                                <span style="font-size: 12pt;">
+                                    <i class="fa fa-check-circle" aria-hidden="true"></i> Email: thaong22.03@gmail.com    
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-right-content col-sm-8 column col-sm-8 page_widget page_chinhsach">
+                    <div class="col-container">
+                        <div class="elm css-text-titleRight title-wrap">
+                            <h2 class="title">CÁC CƠ SỞ CỦA CỬA HÀNG PIZZA EXPRESS</h2>
+                        </div>
+                        <div class="widget widget_nav_menu elm css-mainRight">
+                            <div class="dvls_result_wrap">
+                                <div class="dvls_result_item has_thumb">
+                                    <div class="dvls_result_thumb">
+                                        <img src="./Assests/img/so_01.png">
+                                    </div>
+                                    <div class="dvls_result_infor">
+                                        <p><strong>Pizza Express Ngọc Khánh</strong> - 107 D3 Ngọc Khánh, Ba Đình </p>
+                                        <p></p>
+                                        <a class="large_map" href="https://www.google.com/maps?saddr=Current+Location&daddr=21.027807,105.817630">
+                                            Xem trên bản đồ lớn
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dvls_result_item has_thumb">
+                                    <div class="dvls_result_thumb">
+                                        <img src="./Assests/img/so_02.png">
+                                    </div>
+                                    <div class="dvls_result_infor">
+                                        
+                                        <p> <strong>Pizza Express Nguyễn Trãi</strong> - 4 Ngõ 332 Nguyễn Trãi, Thanh Xuân</p>
+                                        <p></p>
+                                        <a class="large_map" href="https://www.google.com/maps/dir/B%C3%ACnh+Ph%C3%BA,+Y%C3%AAn+M%E1%BB%B9,+H%C6%B0ng+Y%C3%AAn/20.994992,105.808494/@20.9418057,105.7563704,11z/data=!3m1!4b1!4m8!4m7!1m5!1m1!1s0x3135babe4c3d4623:0x738818ec582c5117!2m2!1d105.9890839!2d20.8798469!1m0">
+                                            Xem trên bản đồ lớn
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dvls_result_item has_thumb">
+                                    <div class="dvls_result_thumb">
+                                        <img src="./Assests/img/so_03.png">
+                                    </div>
+                                    <div class="dvls_result_infor">
+                                        <p><strong>Pizza Express Mỹ Đình</strong> - 6 Đồng Bát, Cầu Giấy</p>
+                                        <p></p>
+                                        <a class="large_map" href="https://www.google.com/maps?saddr=Current+Location&daddr=21.031297,105.774993">
+                                            Xem trên bản đồ lớn
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dvls_result_item has_thumb">
+                                    <div class="dvls_result_thumb">
+                                        <img src="./Assests/img/so_04.png">
+                                    </div>
+                                    <div class="dvls_result_infor">
+                                        <p><strong>Pizza Express Hoàng Mai</strong> - 52 Kim Đồng, Hoàng Mai</p>
+                                        <p></p>
+                                        <a class="large_map" href="https://www.google.com/maps?saddr=Current+Location&daddr=20.983590,105.844714">
+                                            Xem trên bản đồ lớn
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- End content -->
+
+    <!-- Begin CamKet -->
+    <section class="elm css-camKet row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-all-ChatLuongDanDau col-sm-3 column col-sm-3">
+                    <div class="col-container">
+                        <div class="elm css-img-footer1 shortcode single_image">
+                            <img class="lazyloaded" src="./Assests/img/footer_01.png" alt="Chất lượng dẫn đầu">
+                        </div>
+                        <div class="elm css-textTitleChatLuongDanDau title-wrap">
+                            <h3 class="title">Chất lượng dẫn đầu</h3>
+                        </div>
+                        <div class="elm css-textContentChatLuongDanDau text_block">
+                            <p>
+                                Chú trọng khâu tuyển chọn đội ngũ đầu bếp chuyên nghiệp, thực đơn của Pizza Express luôn được đổi mới, đa dạng với pizza nhiều hương vị, sandwich, mỳ ý và các món ăn nhanh khác.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-all-GiaHangDungGio col-sm-3 column col-sm-3">
+                    <div class="col-container">
+                        <div class="elm css-img-footer2 shortcode single_image">
+                            <img class="lazyloaded" src="./Assests/img/footer_02.png" alt="Giao hàng đúng giờ">
+                        </div>
+                        <div class="elm css-textTitleGiaoHangDungGio title-wrap">
+                            <h3 class="title">Giao hàng đúng giờ</h3>
+                        </div>
+                        <div class="elm css-textContentGiaoHangDungGio text_block">
+                            <p>
+                                Để tăng cường sự tin tưởng và yên tâm với khách hàng, Pizza Express cam kết luôn giao hàng đúng giờ và chi phí giao hàng rẻ nhất để đảm bảo khách hàng có thể nhận bánh trong thời gian nhanh nhất.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-all-PizzaTakeAway col-sm-3 column col-sm-3">
+                    <div class="col-container">
+                        <div class="elm css-img-footer3 shortcode single_image">
+                            <img class="lazyloaded" src="./Assests/img/footer_03.png" alt="Pizza Take Away">
+                        </div>
+                        <div class="elm css-textTitlePizzaTakeAway title-wrap">
+                            <h3 class="title">Pizza Take Away</h3>
+                        </div>
+                        <div class="elm css-textContentPizzaTakeAway text_block">
+                            <p>
+                                Lựa chọn cho mình một hướng đi mới để tạo nên sự khác biệt, mô hình Pizza take away - pizza mang đi giúp khách hàng tiết kiệm thời gian, đem đến sự tiện lợi tối ưu trong việc lựa chọn, thanh toán, đóng gói và nhận hàng.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-all-PhucVuChuyenNghiep col-sm-3 column col-sm-3">
+                    <div class="col-container">
+                        <div class="elm css-img-footer4 shortcode single_image">
+                            <img class="lazyloaded" src="./Assests/img/footer_04.png" alt="Phục vụ chuyên nghiệp">
+                        </div>
+                        <div class="elm css-textTitlePhucVuChuyenNghiep title-wrap">
+                            <h3 class="title">Phục vụ chuyên nghiệp</h3>
+                        </div>
+                        <div class="elm css-textContentPhucVuChuyenNghiep text_block">
+                            <p>
+                                Pizza Express cùng với đội ngũ nhân viên mang đầy sức trẻ và nhiệt huyết, chúng tôi luôn mong muốn đem lại cho khách hàng của mình chất lượng dịch vụ tốt nhất, luôn lắng nghe và chăm sóc những nhu cầu dù là nhỏ nhất của Quý khách.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End CamKet -->
+
+    <!-- Begin Footer -->
+    <footer class="elm css-footer row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-imglogo shortcode single-img">
+                    <img class="lazyloaded" src="./Assests/img/logo.png" alt="Pizza Express Logo">
+                </div>
+                <div class="elm css-title-lienHe title-wrap">
+                    <h4 class="title">Công ty TNHH Pizza Express Việt Nam</h4>
+                </div>
+                <div class="elm css-content-lienHe text_block footer_content">
+                    <p>
+                        Để đặt bánh pizza, vui lòng liên hệ tổng đài số: 
+                        <a href="tel:0334618813">0334.618.813</a>
+                    </p>
+                    <p>
+                        Để phản ánh chất lượng dịch vụ, vui lòng gọi số: 
+                        <a href="tel:0974019488">0974.019.488</a>
+                    </p>
+                    <p>
+                        Email: 
+                        <a href="mailto:thaong22.03@gmail.com">
+                            thaong22.03@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">Chính sách bảo mật thông tin cá nhân</a>
+                    </p>
+                    <p>
+                        <a href="#">Chính sách đổi/trả sản phẩm và hoàn tiền</a>
+                    </p>
+                    <p>
+                        <a href="#">Chính sách thanh toán</a>
+                    </p>
+                </div>
+                <div class="elm css-imgFooterLine shortcode single_image">
+                    <img class="lazyloaded" src="./Assests/img/footer_line.png" alt="Pizza Express">
+                </div>
+                <div class="elm css-all-BanDo row row_inner">
+                    <div class="elm css-all-ViTri1 col-sm-3 column_inner">
+                        <div class="wrapper col-inner-container">
+                            <div class="elm css-imgSo1 shorcode single-image">
+                                <img class="lazyloaded" src="./Assests/img/so_01.png" alt="Địa chỉ số 1">
+                            </div>
+                            <div class="elm textBaDinh text_block">
+                                <p>107 D3 Ngọc Khánh, Ba Đình</p>
+                            </div>
+                            <div class="elm css-text-XemBanDo1">
+                                <a href="#" class="button" title="Xem trên bản đồ">
+                                    <i class="fa-location-arrow"></i>
+                                    Xem trên bản đồ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elm css-all-ViTri2 col-sm-3 column_inner">
+                        <div class="wrapper col-inner-container">
+                            <div class="elm css-imgSo2 shorcode single-image">
+                                <img class="lazyloaded" src="./Assests/img/so_02.png" alt="Địa chỉ số 2">
+                            </div>
+                            <div class="elm textThanhXuan text_block">
+                                <p>4 Ngõ 332 Nguyễn Trãi, Thanh Xuân</p>
+                            </div>
+                            <div class="elm css-text-XemBanDo2">
+                                <a href="#" class="button" title="Xem trên bản đồ">
+                                    <i class="fa-location-arrow"></i>
+                                    Xem trên bản đồ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elm css-all-ViTri3 col-sm-3 column_inner">
+                        <div class="wrapper col-inner-container">
+                            <div class="elm css-imgSo3 shorcode single-image">
+                                <img class="lazyloaded" src="./Assests/img/so_03.png" alt="Địa chỉ số 3">
+                            </div>
+                            <div class="elm textCauGiay text_block">
+                                <p>6 Đồng Bát, Cầu Giấy</p>
+                            </div>
+                            <div class="elm css-text-XemBanDo3">
+                                <a href="#" class="button" title="Xem trên bản đồ">
+                                    <i class="fa-location-arrow"></i>
+                                    Xem trên bản đồ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elm css-all-ViTri4 col-sm-3 column_inner">
+                        <div class="wrapper col-inner-container">
+                            <div class="elm css-imgSo4 shorcode single-image">
+                                <img class="lazyloaded" src="./Assests/img/so_04.png" alt="Địa chỉ số 4">
+                            </div>
+                            <div class="elm textHoangMai text_block">
+                                <p>52 Kim Đồng, Hoàng Mai</p>
+                            </div>
+                            <div class="elm css-text-XemBanDo4">
+                                <a href="#" class="button" title="Xem trên bản đồ">
+                                    <i class="fa-location-arrow"></i>
+                                    Xem trên bản đồ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-outDiaChi" style="height: 30px; clear: both; width: 100%;"></div>
+                <div class="elm css-all-footerBottom text_block">
+                    <p style="text-align: center;">
+                        <a href="#">
+                            <img width="150" height="57" class="size-large aligncenter lazyloaded" src="./Assests/img/DaThongBao.png" >
+                        </a>
+                    </p>
+                    <p style="text-align: center; color: #aaa;">
+                        <span style="font-size: 8pt;">Công ty TNHH Pizza Express Việt Nam số ĐKKD: 0334618813</span><br>
+                        <span style="font-size: 8pt;">Địa chỉ: X4, Yên Vĩnh, Dạ Trạch, Khoái Châu, Hưng Yên</span><br>
+                        <span style="font-size: 8pt;">Số điện thoại: 0334618813</span><br>
+                         
+                        <a style="color: #aaa; font-size: 8pt;" href="mailto:thaong22.03@gmail.com">Email: thaong22.03@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="./Assests/js/main.js"></script>
+</body>
+
+</html>

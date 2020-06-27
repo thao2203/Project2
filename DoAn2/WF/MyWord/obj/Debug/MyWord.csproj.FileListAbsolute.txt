@@ -1,0 +1,11 @@
+D:\WF\MyWord\bin\Debug\MyWord.exe.config
+D:\WF\MyWord\bin\Debug\MyWord.exe
+D:\WF\MyWord\bin\Debug\MyWord.pdb
+D:\WF\MyWord\obj\Debug\MyWord.csprojAssemblyReference.cache
+D:\WF\MyWord\obj\Debug\MyWord.LoadingForm.resources
+D:\WF\MyWord\obj\Debug\MyWord.Properties.Resources.resources
+D:\WF\MyWord\obj\Debug\MyWord.csproj.GenerateResource.cache
+D:\WF\MyWord\obj\Debug\MyWord.exe
+D:\WF\MyWord\obj\Debug\MyWord.pdb
+D:\WF\MyWord\obj\Debug\MyWord.MainForm.resources
+D:\WF\MyWord\obj\Debug\MyWord.RibbonControl.resources

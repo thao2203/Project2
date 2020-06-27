@@ -1,0 +1,191 @@
+/* Begin Banner */
+
+.bg-title {
+    background: url(../img/bg_title.png) center bottom no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bg-title h1 {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    font-family: Sriracha;
+    font-size: 30px;
+    color: #fffc00;
+    font-weight: 400;
+    text-align: center;
+}
+
+.bg-title #breadcrumbs {
+    display: block;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    color: #FFF;
+}
+
+.bg-title #breadcrumbs a {
+    color: #FFF;
+}
+
+.clfw {
+    width: 100%!important;
+    clear: both!important;
+    display: block!important;
+    height: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+}
+/* End Banner */
+
+
+.left{
+    background-color: #ccc;
+}
+
+h2{
+	margin-top: 20px;
+	font-weight: 700;
+	color: #333;
+    font-size: 18px;
+    
+}
+.left input{
+	border: 1px solid #00000059;
+	width: 100%;
+	height: 45px;
+	margin-bottom: 20px;
+	border-radius: 6px;
+	padding-left: 10px;
+}
+.left select{
+	margin-bottom: 20px;
+	width: 100%;
+	height: 45px;
+	border: 1px solid #00000059;
+	border-radius: 6px;
+	font-size: 15px;
+}
+.left textarea{
+	width: 100%;
+	height: 100px;
+	border: 1px solid #00000059;
+	border-radius: 6px;
+	color: #333;
+	font-size: 15px;
+	padding: 10px;
+}
+h2{
+	margin-top: 20px;
+	font-weight: 700;
+	color: #333;
+    font-size: 18px;
+}
+.between p {
+    font-size: 15px;
+    border: 1px solid #00000054;
+    border-radius: 6px;
+    padding: 5px;
+    color: #333;
+    background: #f8f8f8;
+}
+
+.sp img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    float: left;
+}
+.sp span {
+    background: #faf901;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    margin-top: -10px;
+    position: absolute;
+    margin-left: -8px;
+    opacity: 0.8;
+}
+.sp p{	
+    margin-top: 15px;
+    position: absolute;	
+    margin-left: 70px;
+    color: #333;
+    font-size: 15px;
+    
+}
+.sp h3 {
+    position: absolute;
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-left: 305px;
+    color: #0000006e;
+}
+.sp{
+	height: 60px;
+	border-bottom: 1px solid #33333340;
+}
+.tien{
+	border-bottom: 1px solid #0000004f;
+	height: 60px;
+}
+.tien p{
+	margin-top: 10px;
+	
+	color: #333333bf;
+}
+.tien h3 {
+    position: absolute;
+    margin-top: -35px;
+    font-size: 15px;
+    
+    margin-left: 305px;
+    color: #0000006e;
+}
+.tien h5{
+	margin-top: 10px;
+	color: #33333387;
+	
+}
+.tongtien{
+	margin-top: 10px;
+}
+.tongtien p{	
+color: #0000007a;
+font-size: 15px;
+}
+.tongtien h3 {
+    position: absolute;
+    margin-top: -33px;
+    font-size: 15px;
+   
+    margin-left: 305px;
+    color: #0000006e;
+}
+
+.quayve p {
+    color: #c00a27;
+    margin-left: 20px;
+    margin-top: -24px;
+    
+    font-size: 13px;
+}
+
+.datHang{
+    width: 100px;
+    margin-left: 266px;
+    color: #fff;
+    height: 35px;
+    background: #c00a27; 
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+.menu{
+    margin: 60px 0px;
+}

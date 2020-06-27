@@ -1,0 +1,16 @@
+D:\WF\ThietKeGiaoDien\bin\Debug\ThietKeGiaoDien.exe.config
+D:\WF\ThietKeGiaoDien\bin\Debug\ThietKeGiaoDien.exe
+D:\WF\ThietKeGiaoDien\bin\Debug\ThietKeGiaoDien.pdb
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.csprojAssemblyReference.cache
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.Properties.Resources.resources
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.csproj.GenerateResource.cache
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.exe
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.pdb
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.Bai2_GiaoDien1.resources
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.NotePad.resources
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.RibbonControl.resources
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.Bai2_GiaoDien2.resources
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.clsMyTextbox.resources
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.login.resources
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.myTextbox.resources
+D:\WF\ThietKeGiaoDien\obj\Debug\ThietKeGiaoDien.Form1.resources

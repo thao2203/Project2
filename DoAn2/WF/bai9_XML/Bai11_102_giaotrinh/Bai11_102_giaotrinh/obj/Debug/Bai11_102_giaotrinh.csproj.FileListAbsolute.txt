@@ -1,0 +1,10 @@
+E:\WF\bai9_XML\Bai11_102_giaotrinh\Bai11_102_giaotrinh\bin\Debug\Bai11_102_giaotrinh.exe.config
+E:\WF\bai9_XML\Bai11_102_giaotrinh\Bai11_102_giaotrinh\bin\Debug\Bai11_102_giaotrinh.exe
+E:\WF\bai9_XML\Bai11_102_giaotrinh\Bai11_102_giaotrinh\bin\Debug\Bai11_102_giaotrinh.pdb
+E:\WF\bai9_XML\Bai11_102_giaotrinh\Bai11_102_giaotrinh\obj\Debug\Bai11_102_giaotrinh.csprojAssemblyReference.cache
+E:\WF\bai9_XML\Bai11_102_giaotrinh\Bai11_102_giaotrinh\obj\Debug\Bai11_102_giaotrinh.Form1.resources
+E:\WF\bai9_XML\Bai11_102_giaotrinh\Bai11_102_giaotrinh\obj\Debug\Bai11_102_giaotrinh.Properties.Resources.resources
+E:\WF\bai9_XML\Bai11_102_giaotrinh\Bai11_102_giaotrinh\obj\Debug\Bai11_102_giaotrinh.csproj.GenerateResource.cache
+E:\WF\bai9_XML\Bai11_102_giaotrinh\Bai11_102_giaotrinh\obj\Debug\Bai11_102_giaotrinh.csproj.CoreCompileInputs.cache
+E:\WF\bai9_XML\Bai11_102_giaotrinh\Bai11_102_giaotrinh\obj\Debug\Bai11_102_giaotrinh.exe
+E:\WF\bai9_XML\Bai11_102_giaotrinh\Bai11_102_giaotrinh\obj\Debug\Bai11_102_giaotrinh.pdb

@@ -1,0 +1,10 @@
+D:\WF\usecontrol\bin\Debug\usecontrol.exe.config
+D:\WF\usecontrol\bin\Debug\usecontrol.exe
+D:\WF\usecontrol\bin\Debug\usecontrol.pdb
+D:\WF\usecontrol\obj\Debug\usecontrol.csprojAssemblyReference.cache
+D:\WF\usecontrol\obj\Debug\usecontrol.login.resources
+D:\WF\usecontrol\obj\Debug\usecontrol.Properties.Resources.resources
+D:\WF\usecontrol\obj\Debug\usecontrol.csproj.GenerateResource.cache
+D:\WF\usecontrol\obj\Debug\usecontrol.exe
+D:\WF\usecontrol\obj\Debug\usecontrol.pdb
+D:\WF\usecontrol\obj\Debug\usecontrol.Form1.resources

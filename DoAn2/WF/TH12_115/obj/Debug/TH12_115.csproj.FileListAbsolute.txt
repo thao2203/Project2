@@ -1,0 +1,10 @@
+D:\Coder\WinForm\HomeWork\Baitap\TH12_115\obj\Debug\TH12_115.csprojAssemblyReference.cache
+D:\Coder\WinForm\HomeWork\Baitap\TH12_115\obj\Debug\TH12_115.Form1.resources
+D:\Coder\WinForm\HomeWork\Baitap\TH12_115\obj\Debug\TH12_115.Properties.Resources.resources
+D:\Coder\WinForm\HomeWork\Baitap\TH12_115\obj\Debug\TH12_115.csproj.GenerateResource.cache
+D:\Coder\WinForm\HomeWork\Baitap\TH12_115\obj\Debug\TH12_115.csproj.CoreCompileInputs.cache
+D:\Coder\WinForm\HomeWork\Baitap\TH12_115\bin\Debug\TH12_115.exe.config
+D:\Coder\WinForm\HomeWork\Baitap\TH12_115\bin\Debug\TH12_115.exe
+D:\Coder\WinForm\HomeWork\Baitap\TH12_115\bin\Debug\TH12_115.pdb
+D:\Coder\WinForm\HomeWork\Baitap\TH12_115\obj\Debug\TH12_115.exe
+D:\Coder\WinForm\HomeWork\Baitap\TH12_115\obj\Debug\TH12_115.pdb

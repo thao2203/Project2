@@ -1,0 +1,727 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li{
+    list-style: none;
+}
+
+.col-sm-1 {width: 8.33%;}
+.col-sm-2 {width: 16.66%;}
+.col-sm-3 {width: 25%;}
+.col-sm-4 {width: 33.33%;}
+.col-sm-5 {width: 41.66%;}
+.col-sm-6 {width: 50%;}
+.col-sm-7 {width: 58.33%;}
+.col-sm-8 {width: 66.66%;}
+.col-sm-9 {width: 75%;}
+.col-sm-10 {width: 83.33%;}
+.col-sm-11 {width: 91.66%;}
+.col-sm-12 {width: 100%;}
+
+.elm {
+    float: left;
+    width: 100%;
+}
+
+[class^="fa-"], [class*=" fa-"], [class^="fa-"]:before, [class*=" fa-"]:before, [class^="fab-"], [class*=" fab-"], [class^="fab-"]:before, [class*=" fab-"]:before {
+    font-family: 'FontAwesome';
+    font-style: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    text-rendering: auto;
+    speak: none;
+    font-weight: 400;
+}
+
+.button {
+    transition: background-color .3s ease 0s,color .3s ease 0s,border-radius .3s ease 0s;
+    white-space: nowrap;
+    text-decoration: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #1E73BE;
+    padding: 10px 20px;
+    color: #FFF;
+    display: inline-block;
+}
+
+button:focus {
+    outline: none;
+}
+
+.cart-gioHang {
+        color: white;
+        width: 210px;
+        padding-top: 19px;
+        padding-left: 40px;
+        font-size: 16px;
+        height: 54px;
+        
+        background-color: #850015;
+        
+    }
+#itemCount {
+        position: absolute;
+        top: 10px;
+        left: 158px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff700;
+        opacity: 0.8;
+        color: black;
+        text-align: center;
+}
+
+/* nav {
+    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100000000;
+} */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999999999999999;
+  }
+/* #menu {
+    overflow: hidden;
+} */
+
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-container {
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+.row:not(.row_inner) {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.tabs {
+    display: inline-block;
+    width: 100%;
+}
+
+.row-container.container .wrap-columns, .row_inner {
+    margin-left: -15px;
+    margin-right: -15px;
+    clear: both;
+}
+
+.kingComposer div.column, 
+.kingComposer div.column_inner {
+    clear: none;
+}
+
+.title-wrap {
+    width: 100%;
+}
+
+body a#festi-cart.festi-cart.festi-cart-customize div.festi-cart-content span.festi-cart-text-before-quantity, 
+body a#festi-cart.festi-cart.festi-cart-customize div.festi-cart-content span.festi-cart-quantity, 
+body a#festi-cart.festi-cart.festi-cart-customize div.festi-cart-content span.festi-cart-text-after-quantity,
+body a#festi-cart.festi-cart.festi-cart-customize div.festi-cart-content span.festi-cart-text-before-total, 
+body a#festi-cart.festi-cart.festi-cart-customize div.festi-cart-content span.festi-cart-total span.amount, 
+body a#festi-cart.festi-cart.festi-cart-customize div.festi-cart-content span.festi-cart-total small,
+body a#festi-cart.festi-cart.festi-cart-customize div.festi-cart-content span.festi-cart-text-after-total, 
+body a#festi-cart.festi-cart.festi-cart-customize div.festi-cart-content span.festi-cart-dropdown-arrow 
+{
+    font-size: 14px;
+    color: #fff700;
+}
+
+body a#festi-cart::after, 
+body a#festi-cart::before,
+body a#festi-cart *::after, 
+body a#festi-cart *::before, 
+body div#festi-cart-pop-up-content, 
+body div#festi-cart-pop-up-content::after, 
+body div#festi-cart-pop-up-content::before, 
+body div#festi-cart-pop-up-content *::after, 
+body div#festi-cart-pop-up-content *::before, 
+body div.festi-cart-products-content, 
+body div.festi-cart-products-content::after, 
+body div.festi-cart-products-content::before, 
+body div.festi-cart-products-content *::after, 
+body div.festi-cart-products-content *::before, 
+body div.festi-cart-widget-products-content, 
+body div.festi-cart-widget-products-content::after, 
+body div.festi-cart-widget-products-content::before, 
+body div.festi-cart-widget-products-content *::after, 
+body div.festi-cart-widget-products-content *::before {
+    content: none;
+}
+
+.css-bg-a9001b{
+    background: #a9001b;
+}
+
+body.css-system .css-bgc00a27 {
+    background: #c00a27;
+}
+
+.single_image {
+    max-width: 100%;
+    width: 100%;
+    line-height: 0;
+}
+
+.single_image, .single_image figure {
+    position: relative;
+}
+
+@media only screen and (max-width: 767px){
+    
+    body.css-system .column, 
+    body.css-system .column_inner {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 5000px) and (min-width: 1000px){
+    body.css-system .css-wLogo, 
+    body.css-system .css-textHeader, 
+    body.css-system .css-gioHang,
+    
+    body.css-system .css-btnLogo1 {
+        width: 100%;
+    }
+    body.css-system .css-menu,
+    body.css-system .css-right-menu {
+        width: 50%;
+    }
+    body.css-system .css-left-slide{
+        width: 13%;
+    }
+    body.css-system .css-right-slide{
+        width: 87%;
+    }
+    body.css-system .css-all-ChatLuongDanDau, 
+    body.css-system .css-all-GiaHangDungGio, 
+    body.css-system .css-all-PizzaTakeAway, 
+    body.css-system .css-all-PhucVuChuyenNghiep,
+    body.css-system .css-all-ViTri1,
+    body.css-system .css-all-ViTri2,
+    body.css-system .css-all-ViTri3,
+    body.css-system .css-all-ViTri4 {
+        width: 25%;
+    }
+    
+}
+
+@media screen and (min-width: 999px){
+    .row-container.container .wrap-columns, .row_inner {
+        width: calc(100% + 30px);
+    }
+    .row-container .wrap-columns, .row_inner {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .home_moidat_title:after{
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 0 8px 10px;
+        border-color: transparent transparent transparent #c00a27;
+        position: absolute;
+        top: calc(50% - 8px);
+        right: -10px;
+        z-index: 99;
+    }
+    
+    .combo_home .combo_item {
+        padding: 0 15px;
+    }
+
+    .testi_slider .swiper-slide {
+        background: #FFF;
+        border-radius: 6px;
+        padding: 20px;
+        margin-top: 15px!important;
+    }
+
+    .dc_testi_slider .testi_thumb {
+        width: 100px;
+        float: left;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    .dc_testi_slider .testi_thumb img {
+        display: block;
+    }
+
+    .dc_testi_slider .testi_info {
+        width: calc(100% - 100px);
+        padding-left: 20px;
+        float: left;
+        font-size: 14px;
+    }
+
+    .dc_testi_slider .testi_info p.testi_cont {
+        font-style: italic;
+        line-height: 22px;
+    }
+
+    .dc_testi_slider .testi_info p.testi_name {
+        font-weight: 600;
+    }
+}
+
+/* Header */
+
+body.css-system .css-wLogo, body.css-system .css-gioHang{
+    width: 240px;
+}
+
+.column, .column_inner {
+    min-height: 1px;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+
+.column>.col-container, .column_inner>.col-inner-container {
+    height: 100%;
+}
+
+body.css-system .css-img {
+    text-align: left;
+    margin-top: 8px;
+}
+
+.single_image>a {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.single_image img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+body.css-system .css-btnLogo {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 50px;
+    height: 100%;
+}
+
+.row.row_inner {
+    width: calc(100% + 30px);
+}
+
+.row_inner>div.column_inner:only-child {
+    width: 100%;
+}
+
+body.css-system .css-btnLogo1 {
+    padding: 0 0 0 0;
+}
+
+body.css-system .css-textHeader {
+    width: calc(100% - 480px);
+}
+
+.css-textHeader1{
+    margin-top: 19px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.css-textHeader1 span a{
+    color: #fff;
+    font-size: 16px;
+}
+
+.css-textHeader1 span a:hover{
+    color: #faf901;
+    cursor: pointer;
+}
+
+.text_block {
+    display: inline-block;
+    clear: both;
+    width: 100%;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+
+ul#menu-cart {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+ul#menu-cart:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: #fff700 transparent transparent transparent;
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 10px;
+    z-index: 99;
+}
+
+li.festi-cart-menu-item {
+    list-style: none;
+    position: relative;
+}
+
+ul#menu-cart li a#festi-cart.festi-cart.festi-cart-customize {
+    width: 100%;
+    padding: 23px 15px 7px 60px;
+    background: #850015 url(../img/gio_hang.png) center left 13px no-repeat;
+}
+
+body a#festi-cart.festi-cart.festi-cart-customize {
+    text-align: right;
+    background-color: rgba(133,0,20,1);
+    border: 0 solid;
+    border-color: #6f6f6f;
+    padding: 10px;
+    border-radius: 1px 1px 1px 1px;
+}
+
+a#festi-cart.wooCart-show {
+    display: -moz-inline-stack;
+    display: inline-block!important;
+    vertical-align: baseline;
+    zoom: 1;
+}
+
+ul#menu-cart li a.festi-cart div.festi-cart-content {
+    width: 100%;
+}
+
+a.festi-cart div.festi-cart-content {
+    display: inline-block;
+    font-style: normal;
+    text-align: left;
+}
+
+a.festi-cart div.festi-cart-content span {
+    text-transform: none;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+ul#menu-cart li a.festi-cart div.festi-cart-content span {
+    font-weight: 600;
+}
+
+
+/* menu */
+body.css-system .css-menu {
+    width: calc(100% - 240px);
+}
+
+body.css-system .css-247 {
+    display: none;
+}
+
+body.css-system .css-247, body.css-system .css-phone p {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+body.css-system .css-tel {
+    text-align: center;
+    display: none;
+}
+
+body.css-system .css-tel .button {
+    color: #fff600;
+    background-color: rgba(255,255,255,0);
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0 0 0 0;
+}
+
+.fa-mobile-alt:before {
+    content: "\f3cd";
+}
+
+.countdown-timer span.group, .button {
+    padding: 10px 20px;
+    color: #FFF;
+    display: inline-block;
+}
+
+.button i {
+    vertical-align: middle;
+    font-size: 90%;
+}
+.menu_call_btn i {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+body.css-system .css-menu1 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.menu_top ul.menu {
+    margin: 0;
+    padding: 0;
+}
+
+.menu_top ul.menu li a {
+    display: block;
+    color: #FFF;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+.menu_top ul.menu li {
+    width: 16.666%;
+    float: left;
+    list-style: none;
+    text-align: center;
+    border-right: 1px solid #a9001b;
+}
+
+.menu_top ul.menu li.thucdon a {
+    color: #FFFFFF!important;
+}
+
+.menu_top ul.menu li.thucdon a:hover {
+    color: #faf901!important;
+}
+
+.menu_top ul.menu li a:hover {
+    color: #faf901;
+}
+
+.menu_top ul.menu li.current-menu-item a {
+    color: #faf901;
+}
+
+body.css-system .css-right-menu{
+    width: 240px;
+}
+
+body.css-system .css-right-247 p {
+    margin-top: 15px;
+}
+
+body.css-system .css-right-tel .button {
+    color: #fff600;
+    background-color: rgba(255,255,255,0);
+    font-size: 22px;
+    font-weight: 600;
+    padding: 0 0 0 0;
+}
+
+body.css-system .css-right-247, body.css-system .css-right-247 p {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+body.css-system .css-right-tel {
+    text-align: center;
+    display: block;
+}
+/* ------------------------------------------------------------------------------------------------------ */
+/* Begin CamKet */
+body.css-system .css-camKet {
+    background: transparent url(../img/footer_top_bg.png) top center/cover no-repeat scroll;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+body.css-system .css-img-footer1,
+body.css-system .css-img-footer2,
+body.css-system .css-img-footer3,
+body.css-system .css-img-footer4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body.css-system .css-textTitleChatLuongDanDau.title,
+body.css-system .css-textTitleChatLuongDanDau .title, 
+body.css-system .css-textTitleChatLuongDanDau .title a.title_link,
+body.css-system .css-textTitleGiaoHangDungGio.title,
+body.css-system .css-textTitleGiaoHangDungGio .title, 
+body.css-system .css-textTitleGiaoHangDungGio .title a.title_link,
+body.css-system .css-textTitlePizzaTakeAway.title,
+body.css-system .css-textTitlePizzaTakeAway .title, 
+body.css-system .css-textTitlePizzaTakeAway .title a.title_link,
+body.css-system .css-textTitlePhucVuChuyenNghiep.title,
+body.css-system .css-textTitlePhucVuChuyenNghiep .title, 
+body.css-system .css-textTitlePhucVuChuyenNghiep .title a.title_link {
+    color: #c00a27;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+body.css-system .css-textContentChatLuongDanDau, 
+body.css-system .css-textContentChatLuongDanDau p,
+body.css-system .css-textContentGiaoHangDungGio, 
+body.css-system .css-textContentGiaoHangDungGio p,
+body.css-system .css-textContentPizzaTakeAway, 
+body.css-system .css-textContentPizzaTakeAway p,
+body.css-system .css-textContentPhucVuChuyenNghiep, 
+body.css-system .css-textContentPhucVuChuyenNghiep p {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    
+}
+/* End CamKet */
+
+/* --------------------------------------------------------- */
+/* <!-- Begin Footer --> */
+body.css-system .css-footer {
+    background: transparent url(../img/footer_bg.jpg) center center/cover no-repeat scroll;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}    
+
+body.css-system .css-imglogo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body.css-system .css-title-lienHe.title, body.css-system .css-title-lienHe .title, body.css-system .css-title-lienHe .title a.title_link {
+    color: #fff000;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+body.css-system .css-content-lienHe {
+    padding-bottom: 15px;
+}
+body.css-system .css-content-lienHe, 
+body.css-system .css-content-lienHe p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer_content a {
+    color: #fff;
+}
+
+body.css-system .css-imgFooterLine {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body.css-system .css-imgSo1,
+body.css-system .css-imgSo2,
+body.css-system .css-imgSo3,
+body.css-system .css-imgSo4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+body.css-system .textBaDinh,
+body.css-system .textThanhXuan,
+body.css-system .textCauGiay,
+body.css-system .textHoangMai {
+    padding-bottom: 10px;
+}
+
+body.css-system .textBaDinh, 
+body.css-system .textBaDinh p,
+body.css-system .textThanhXuan, 
+body.css-system .textThanhXuan p,
+body.css-system .textCauGiay, 
+body.css-system .textCauGiay p,
+body.css-system .textHoangMai, 
+body.css-system .textHoangMai p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+body.css-system .css-text-XemBanDo1,
+body.css-system .css-text-XemBanDo2,
+body.css-system .css-text-XemBanDo3,
+body.css-system .css-text-XemBanDo4 {
+    text-align: center;
+    display: block;
+}
+
+body.css-system .css-text-XemBanDo1 .button,
+body.css-system .css-text-XemBanDo2 .button,
+body.css-system .css-text-XemBanDo3 .button,
+body.css-system .css-text-XemBanDo4 .button {
+    color: #fff000;
+    background-color: rgba(255,255,255,0);
+    font-size: 14px;
+    font-weight: 400;
+    border: 0 solid #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* <!-- End Footer --> */

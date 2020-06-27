@@ -1,0 +1,133 @@
+/* Begin Banner */
+
+.bg-title {
+    background: url(../img/bg_title.png) center bottom no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bg-title h1 {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    font-family: Sriracha;
+    font-size: 30px;
+    color: #fffc00;
+    font-weight: 400;
+    text-align: center;
+}
+
+.bg-title #breadcrumbs {
+    display: block;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    color: #FFF;
+}
+
+.bg-title #breadcrumbs a {
+    color: #FFF;
+}
+
+.clfw {
+    width: 100%!important;
+    clear: both!important;
+    display: block!important;
+    height: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+}
+/* End Banner */
+
+/* Begin Content */
+body.css-system .css-all-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+body.css-system .css-text-titleLeft.title, 
+body.css-system .css-text-titleLeft .title, 
+body.css-system .css-text-titleLeft .title a.title_link {
+    color: #c00a27;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+body.css-system .css-right-content {
+    background: #f5f5f5;
+    padding-bottom: 20px;
+}
+
+.page_chinhsach ul {
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.page_chinhsach ul li {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.page_chinhsach ul li.current-menu-item a {
+    color: #c00a27;
+}
+.page_chinhsach ul li a {
+    color: #010101;
+}
+
+body.css-system .css-imgRight {
+    text-align: center;
+    margin-top: 30px;
+}
+/* End Content */
+
+@media only screen and (max-width: 767px){
+    body.css-system .css-all-content {
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    body.css-system .css-text-titleLeft.title, 
+    body.css-system .css-text-titleLeft .title,
+    body.css-system .css-text-titleLeft .title a.title_link {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    body.css-system .css-text-titleRight.title, 
+    body.css-system .css-text-titleRight .title, 
+    body.css-system .css-text-titleRight .title a.title_link {
+        font-size: 14px;
+    }
+
+    body.css-system .css-all-NdChinhSach, 
+    body.css-system .css-all-NdChinhSach p {
+        font-size: 12px;
+    }
+
+    body.css-system .css-all-NdChinhSach p {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    body.css-system .css-all-NdChinhSach p {
+        margin-bottom: 20px;
+    }
+    body.css-system .css-all-NdLienHe span{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 5000px) and (min-width: 1000px){
+    body.css-system .css-right-content{ 
+        width: 33.33%;
+    }
+    body.css-system .css-left-content{
+        width: 66.66%;
+    }
+}

@@ -1,0 +1,10 @@
+E:\WF\NguyenThiThao_BTH12_115\NguyenThiThao_BTH12_115\obj\Debug\NguyenThiThao_BTH12_115.csprojAssemblyReference.cache
+E:\WF\NguyenThiThao_BTH12_115\NguyenThiThao_BTH12_115\obj\Debug\NguyenThiThao_BTH12_115.Form1.resources
+E:\WF\NguyenThiThao_BTH12_115\NguyenThiThao_BTH12_115\obj\Debug\NguyenThiThao_BTH12_115.Properties.Resources.resources
+E:\WF\NguyenThiThao_BTH12_115\NguyenThiThao_BTH12_115\obj\Debug\NguyenThiThao_BTH12_115.csproj.GenerateResource.cache
+E:\WF\NguyenThiThao_BTH12_115\NguyenThiThao_BTH12_115\obj\Debug\NguyenThiThao_BTH12_115.csproj.CoreCompileInputs.cache
+E:\WF\NguyenThiThao_BTH12_115\NguyenThiThao_BTH12_115\bin\Debug\NguyenThiThao_BTH12_115.exe.config
+E:\WF\NguyenThiThao_BTH12_115\NguyenThiThao_BTH12_115\bin\Debug\NguyenThiThao_BTH12_115.exe
+E:\WF\NguyenThiThao_BTH12_115\NguyenThiThao_BTH12_115\bin\Debug\NguyenThiThao_BTH12_115.pdb
+E:\WF\NguyenThiThao_BTH12_115\NguyenThiThao_BTH12_115\obj\Debug\NguyenThiThao_BTH12_115.exe
+E:\WF\NguyenThiThao_BTH12_115\NguyenThiThao_BTH12_115\obj\Debug\NguyenThiThao_BTH12_115.pdb

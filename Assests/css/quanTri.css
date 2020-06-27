@@ -1,0 +1,108 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.slidebar{
+    position: fixed;
+    left: -350px;
+    width: 350px;
+    height: 100%;
+    background: #C00A27;
+    transition: all 0.5s ease;
+}
+
+.slidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #850015;
+    user-select: none;
+}
+
+.slidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 15px;
+    color: white;
+    padding-left: 40px;
+    border-top: 1px solid rgba(156, 12, 12, 0.678);
+    border-bottom: 1px solid #850015;
+    transition: 0.4s;
+}
+
+ul li:hover a{
+    padding-left: 50px;
+}
+
+.slidebar ul a i{
+    margin-right: 16px;
+}
+
+#check{
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: rgba(156, 12, 12, 0.678);
+    border-radius: 3px;
+
+}
+
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+img{
+    padding-top: 30px;
+}
+
+label #cancel{
+    z-index: 10000;
+    left: -290px;
+    top: 32px;
+    font-size: 30px;
+    color: #680010;
+    padding: 4px 9px;
+    transition: all 0.5s ease;
+}
+
+#check:checked ~ .slidebar{
+    left:0;
+}
+
+#check:checked ~ label #btn{
+    left: 350px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 290px;
+}
+
+section{
+    background: url(../img/pizza_quanTri.webp) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}

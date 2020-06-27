@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực đơn</title>
+    <link rel="stylesheet" href="./Assests/css/base.css">
+    <link rel="stylesheet" href="./Assests/css/trangChu.css">
+    <script src="https://kit.fontawesome.com/974cf27236.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="kingComposer css-system">
+    <!-- Begin Header -->
+    <section id="header" class="elm css-bg-a9001b row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-wLogo col-sm-4 column col-sm-4">
+                    <div class="col-container">
+                        <div class=" elm css-img shortcode single_image logo">
+                            <a href="./trangChu.html" title="Trang chủ - Pizza Express" target="_self">
+                                <img src="./Assests/img/logo.png" class="lazyLoaded" alt="Pizza Express Logo">
+                            </a>
+                        </div>
+                        <div class="elm css-btnLogo row row_inner">
+                            <div class="elm css-btnLogo1 col-sm-12 column_inner col-sm-12">
+                                <div class="wrapper col-inner-container">
+                                    <div class="elm css-btnLogo2 rawCode">
+                                        <button type="button" class="btn menu_btn" data-toggle="modal"
+                                            data-target="#dc_menu"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-textHeader col-sm-4 column col-sm-4">
+                    <div class="col-container">
+                        <div class="elm css-textHeader1 text_block">
+                            <span><a href="./dangKy.html">Đăng Ký</a></span>
+                            <span> | </span>
+                            <span><a href="./dangNhap.html">Đăng Nhập</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-gioHang col-sm-4 column col-sm-4 cart_count">
+                    <div class="col-container">
+                        <div class="widget widget_nav_menu elm">
+                            <div class="menu-cart-container">
+                                <a href="giohang.html" title="Giỏ hàng" class=" cart-gioHang" style="float: right;">
+                                    Giỏ hàng:      
+                                    <span id="itemCount" style="display: inline; font-size: 12px;">1</span>
+                                    <i class="fa fa-cart-arrow-down" style="margin-left: 10px;"></i>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Begin Menu -->
+    <nav id="menu" class="elm css-bgc00a27 row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-menu col-sm-6 column menu_top">
+                    <div class="col-container">
+                        <div class="elm css-247 text_block">
+                            <p>Gọi điện ngay - Ship liền tay (24/7)</p>
+                        </div>
+                        <div class="elm css-tel">
+                            <a href="tel:0334618813" class="button menu_call_btn" target="_self" title="Tổng Đài Pizza"
+                                onclick="">
+                                <i class="fas fa-mobile-alt"></i>
+                                " (033) 4.618.813"
+                            </a>
+                        </div>
+                        <div class="widget widget_nav_menu elm css-menu1">
+                            <div class="menu-menu-container">
+                                <ul id="menu-menu" class="menu">
+                                    <li id="menu-item-74"
+                                        class="trangchu menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-74">
+                                        <a href="trangChu.html" aria-current="page">Trang chủ</a>
+                                    </li>
+                                    <li id="menu-item-208"
+                                        class="thucdon menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-208">
+                                        <a href="#" aria-current="page">Thực đơn</a>
+                                    </li>
+                                    <li id="menu-item-78"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78">
+                                        <a href="khuyenMai.html">Khuyến mại</a>
+                                    </li>
+                                    <li id="menu-item-75"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menuitem-75">
+                                        <a href="chinhSach.html">Chính sách</a>
+                                    </li>
+                                    <li id="menu-item-83"
+                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-83">
+                                        <a href="blog.html">Blog</a>
+                                    </li>
+                                    <li id="menu-item-79"
+                                        class="menu-item menu-item-type-post menu-item-object-page menu-item-79">
+                                        <a href="lienHe.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-right-menu col-sm-6 column col-sm-6">
+                    <div class="col-container">
+                        <div class="elm css-right-247 text_block">
+                            <p>Gọi điện ngay - Ship liền tay (24/7)</p>
+                        </div>
+                        <div class="elm css-right-tel">
+                            <a href="tel:0334618813" class="button menu_call_btn" target="_self"
+                                title="Đặt hàng ngay - Pizza Express" onclick="">
+                                <i class="fas fa-mobile-alt"></i>
+                                0334.618.813
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Menu -->
+
+    <!-- Begin Banner -->
+    <section class="elm css-banner row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-banner1 col-sm-12 column col-sm-12">
+                    <div class="col-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner -->
+
+    <!-- Begin slide -->
+    <section class="elm css-slide row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-left-slide col-sm-2 column home_moidat_title">
+                    <div class="col-container">
+                        <div class="elm css-text-left-slide title-wrap">
+                            <span class="title">Khách hàng vừa đặt</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-right-slide col-sm-10 column">
+                    <div class="col-container">
+                        <div class="elm tabs group khvd_tabs tabs-slider">
+                            <div class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                                <div class="owl-wrapper-outer">
+                                    <div class="owl-wrapper"
+                                        style="width: 16038px; left: 0px; display: block; transition: all ease 0s; transform: translate3d();">
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Thu - (6p trước)</div>
+                                                            <div class="content-title">2 bánh = 120.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab2" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Quỳnh - (8p trước)</div>
+                                                            <div class="content-title">1 bánh = 80.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab3" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Lam - (9p trước)</div>
+                                                            <div class="content-title">1 CB 04 = 449.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab4" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Thảo - (12p trước)</div>
+                                                            <div class="content-title">1 Salad = 70.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab5" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Hiếu - (14p trước)</div>
+                                                            <div class="content-title">2 Mỳ Ý = 140.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab6" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Hiền - (15p trước)</div>
+                                                            <div class="content-title">1 Mỳ Ý = 70.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab7" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Huy - (15p trước)</div>
+                                                            <div class="content-title">2 bánh = 120.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab8" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Mai - (18p trước)</div>
+                                                            <div class="content-title">1 CB 03 = 279.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab9" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Ngọc - (19p trước)</div>
+                                                            <div class="content-title">1 CB 02 = 189.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab10" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Hùng - (19p trước)</div>
+                                                            <div class="content-title">5 CB 04 = 2.245.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab11" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Kiên - (20p trước)</div>
+                                                            <div class="content-title">2 bánh = 170.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab12" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Linh - (22p trước)</div>
+                                                            <div class="content-title">2 bánh = 200.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab13" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. My - (23p trước)</div>
+                                                            <div class="content-title">1 bánh = 140.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab14" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Quân - (25p trước)</div>
+                                                            <div class="content-title">3 bánh = 420.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab15" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Tài - (27p trước)</div>
+                                                            <div class="content-title">3 Mỳ Ý = 420.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab16" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Tú - (27p trước)</div>
+                                                            <div class="content-title">2 bánh = 220.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab17" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Thu - (28p trước)</div>
+                                                            <div class="content-title">1 bánh = 140.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab18" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Nga - (29p trước)</div>
+                                                            <div class="content-title">1 CB 03 = 279.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab19" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Mạnh - (31p trước)</div>
+                                                            <div class="content-title">1 CB 02 = 189.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab20" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. An - (32p trước)</div>
+                                                            <div class="content-title">2 Salad= 120.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab21" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Tùng - (34p trước)</div>
+                                                            <div class="content-title">2 Mỳ Ý = 140.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab22" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Quỳnh - (36p trước)</div>
+                                                            <div class="content-title">1 bánh = 80.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab23" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Ngạn - (39p trước)</div>
+                                                            <div class="content-title">1 CB 04 = 449.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab24" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Hạnh - (40p trước)</div>
+                                                            <div class="content-title">1 Salad = 70.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab25" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Hiếu - (41p trước)</div>
+                                                            <div class="content-title">2 bánh = 70.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab26" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Chi - (42p trước)</div>
+                                                            <div class="content-title">3 Salad = 180.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab27" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Dương - (45p trước)</div>
+                                                            <div class="content-title">4 bánh = 300.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab28" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Đức - (48p trước)</div>
+                                                            <div class="content-title">1 CB 03 = 279.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab29" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Ngọc - (49p trước)</div>
+                                                            <div class="content-title">1 Mỳ Ý = 140.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab30" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Khánh - (49p trước)</div>
+                                                            <div class="content-title">5 CB 04 = 2.245.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab31" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">C. Linh - (50p trước)</div>
+                                                            <div class="content-title">2 bánh = 160.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab32" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Dũng - (52p trước)</div>
+                                                            <div class="content-title">2 Salad = 140.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="width: 243px;">
+                                            <div id="new-tab33" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                <div class="tab_content">
+                                                    <div
+                                                        class="elm css-br-right-slide feature-boxes fb-layout-4 khvd_item">
+                                                        <figure class="content-image">
+                                                            <img src="./Assests/img/giphy44x44.gif"
+                                                                alt="Pizza Express GIF"
+                                                                data-lazy-src="./Assests/img/giphy44x44.gif"
+                                                                class="lazyloaded" data-was-processed="true">
+                                                        </figure>
+                                                        <div class="box-right">
+                                                            <div class="content-position">A. Văn - (55p trước)</div>
+                                                            <div class="content-title">5 CB 04 = 2.245.000đ</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End slide -->
+
+    <!-- Begin content -->
+    <section id="home_thucdon" class="elm css-all-content row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-content col-sm-12 column col-sm-12">
+                    <div class="col-container">
+                        <div class="elm css-span-thucdon divider_line blogs_title">
+                            <div class="divider_inner divider_line3">
+                                <span class="line_text">Thực đơn</span>
+                            </div>
+                        </div>
+                        <div data-open-on-mouseover data-tab-active="1" data-effect-option="yes"
+                            class="elm css-click-content tabs group tabs_thucdon">
+                            <div class="wrapper ui-tabs clearfix">
+                                <ul class="tabs_nav ui-tabs-nav clearfix">
+                                    <li class="ui-tabs-active">
+                                        <a href="#" data-prevent="scroll">Pizza</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-prevent="scroll">Sườn BBQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-prevent="scroll">Mì Ý</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-prevent="scroll">Salad</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-prevent="scroll">Đồ Uống</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-prevent="scroll">Combo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-prevent="scroll">Khác</a>
+                                    </li>
+                                </ul>
+                                <div id="pizza"
+                                    class="elm css-pizza tab ui-tabs-panel ui-tabs-hide clearfix tabs_pizza ui-tabs-body-active section-active"
+                                    style="opacity:1;">
+                                    <div class="tab_content">
+                                        <div class="elm css-pizzaA raw-code">
+                                            <div class="woocomerce columns-4">
+                                                <ul class="products dc_columns columns-4">
+                                                    <li class="product_item">
+                                                        <div class="product_img">
+                                                            <img src="./Assests/img/P1rs1.jpg"
+                                                                style="width: 260; height: 204;"
+                                                                class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image lazyloaded"
+                                                                data-lazy-src="./Assests/img/P1rs1.jpg"
+                                                                data-was-processed="true" alt>
+                                                            <div class="product_hover">
+                                                                <div class="product_hover_cont">
+                                                                    <h3 class="woocommerce-loop-product__title">P1.
+                                                                        Beefy Pizza</h3>
+                                                                    <p><strong>Thành phần</strong></p>
+                                                                    <p>Thịt bò xay, ngô, sôt BBQ, phô mai.</p>
+                                                                    <p><strong>Kích cỡ / Giá</strong></p>
+                                                                    <p>
+                                                                        <img src="./Assests/img/icon-P-S.png"
+                                                                            class="alignnone wp-image-345 size-full lazyloaded">
+                                                                        &nbsp; Size S / 20cm / 90.000đ
+                                                                    </p>
+                                                                    <p>
+                                                                        <img src="./Assests/img/icon-P-M.png"
+                                                                            class="alignnone wp-image-344 size-full lazyloaded">
+                                                                        &nbsp; Size M / 24cm / 110.000đ
+                                                                    </p>
+                                                                    <p>
+                                                                        <img src="./Assests/img/icon-P-M.png"
+                                                                            class="alignnone wp-image-346 size-full lazyloaded">
+                                                                        &nbsp; Size L / 30cm / 150.000đ
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <h3 class="woocommerce-loop-product__title">P1. Beefy Pizza
+                                                            </h3>
+                                                            <span class="price">
+                                                                <span class="woocommerce-Price-amount amount">
+                                                                    90.000
+                                                                    <span
+                                                                        class="woocommerce-Price-currencySymbol">₫</span>
+                                                                </span>
+                                                                -
+                                                                <span class="woocommerce-Price-amount amount">
+                                                                    150.000
+                                                                    <span
+                                                                        class="woocommerce-Price-currencySymbol">₫</span>
+                                                                </span>
+                                                            </span>
+                                                            <form action="#" class="variations_form cart">
+                                                                <table class="variations" cellspacing="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="label">
+                                                                                <label for="pa_size">Size</label>
+                                                                            </td>
+                                                                            <td
+                                                                                class="value woo-variation-items-wrapper">
+                                                                                <select id="pa_size"
+                                                                                    class="hide woo-variation-raw-select woo-variation-raw-type-button"
+                                                                                    style="display: none;">
+                                                                                    <option value>Chọn một tùy chọn
+                                                                                    </option>
+                                                                                    <option value="s"
+                                                                                        class="attached enabled">S
+                                                                                    </option>
+                                                                                    <option value="m"
+                                                                                        class="attached enabled">M
+                                                                                    </option>
+                                                                                    <option value="l"
+                                                                                        class="attached enabled">L
+                                                                                    </option>
+                                                                                </select>
+                                                                                <ul class="variable-items-wrapper button-variable-wrapper reselect-clear"
+                                                                                    data-attribute_name="attribute_pa_size">
+                                                                                    <li data-wvstooltip="S"
+                                                                                        class="variable-item button-variable-item button-variable-item-s"
+                                                                                        title="S" data-value="s">
+                                                                                        <span
+                                                                                            class="variable-item-span variable-item-span-button">S</span>
+                                                                                    </li>
+                                                                                    <li data-wvstooltip="M"
+                                                                                        class="variable-item button-variable-item button-variable-item-m"
+                                                                                        title="M" data-value="m">
+                                                                                        <span
+                                                                                            class="variable-item-span variable-item-span-button">M</span>
+                                                                                    </li>
+                                                                                    <li data-wvstooltip="L"
+                                                                                        class="variable-item button-variable-item button-variable-item-l"
+                                                                                        title="L" data-value="l">
+                                                                                        <span
+                                                                                            class="variable-item-span variable-item-span-button">L</span>
+                                                                                    </li>
+                                                                                </ul>
+                                                                                <a href="#" class="reset_variations"
+                                                                                    style="visibility: hidden;">Xóa</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <div class="single_variation_wrap">
+                                                                    <div class="woocommerce-variation single_variation"
+                                                                        style="display: none;"></div>
+                                                                    <div
+                                                                        class="woocommerce-variation-add-to-cart variations_button woocommerce-variation-add-to-cart-disabled">
+                                                                        <div class="quantity">
+                                                                            <label class="screen-reader-text"
+                                                                                for="quantity_5ed5a6e9b93fc">Số
+                                                                                lượng</label>
+                                                                            <div class="dc_quantity_input">
+                                                                                <input type="button" class="minus"
+                                                                                    value="-">
+                                                                                <input type="number" name="quantity"
+                                                                                    id="quantity_5ed5a6e9b93fc"
+                                                                                    class="input-text qty text" step="1"
+                                                                                    min="1" max value="1" title="SL"
+                                                                                    size="4" pattern="[0-9]*"
+                                                                                    inputmode="numeric"
+                                                                                    aria-labelledby="P1. Beefy Pizza số lượng">
+                                                                                <input type="button" class="plus"
+                                                                                    value="+">
+                                                                            </div>
+                                                                        </div>
+                                                                        <button type="submit"
+                                                                            class="single_add_to_cart_button button alt disabled wc-variation-selection-needed">
+                                                                            Mua hàng
+                                                                        </button>
+                                                                        <input type="hidden" name="add-to-cart"
+                                                                            value="136">
+                                                                        <input type="hidden" name="product_id"
+                                                                            value="136">
+                                                                        <input type="hidden" name="variable-id"
+                                                                            class="variation_id" value="0">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End content -->
+
+    <!-- Begin combo -->
+    <section class="elm css-combo row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-comboA col-sm-12 column col-sm-12">
+                    <div class="col-container">
+                        <div class="combo_title">
+                            <div class="combo_text">
+                                Siêu tiết kiệm
+                            </div>
+                        </div>
+                        <div class="elm css-text-SieuHapDan title-wrap">
+                            <h2 class="title">Combo siêu hấp dẫn</h2>
+                        </div>
+                        <div class="elm css-contentCombo raw-code">
+                            <div class="elm tabs group tabs-slider combo_home">
+                                <div class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                                    <div class="owl-wrapper-outer">
+                                        <div class="owl-wrapper" style="width: 2280px; left: 0px; display: block;">
+                                            <div class="owl-item" style="width: 285px;">
+                                                <div id="new-tab" class="elm tab tabs-panel ui-tabs-hide clearfix">
+                                                    <div class="tab_content">
+                                                        <div class="combo_item">
+                                                            <div class="combo_thumb">
+                                                                <img width="600" height="600" src="./Assests/img/combo-4-1.png">
+                                                            </div>
+                                                            <div class="combo_title_addcart">
+                                                                <h3>Combo 04</h3>
+                                                                <a href="#" rel="nofollow" class="button add_to_cart_button product_type_simple ajax_add_to_cart">Mua hàng</a>
+                                                            </div>
+                                                            <div class="combo_info_price">
+                                                                Cho 6 người
+                                                                <span class="woocommerce-Price-amount amount">
+                                                                    429.000
+                                                                    <span class="woocommerce-Price-currencySymbol">₫</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="combo_desc"> 3 Pizza size L + 1 Mỳ Ý + 1 Khoai tây chiên + 1 Coca 1.5L</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item" style="width: 285px;">
+                                                <div id="new-tab" class="em tab ui-tab-panel ui-tabs-hide clearfix">
+                                                    <div class="tab_content">
+                                                        <div class="combo_item">
+                                                            <div class="combo_thumb">
+                                                                <img width="600" height="600" src="./Assests/img/combo-3-1.png" class="attachment-full size-full wp-post-image lazyloaded">
+                                                            </div>
+                                                            <div class="combo_title_addcart">
+                                                                <h3>Combo 03</h3>
+                                                                <a href="#" class="button add_to_cart_button product_type_simple ajax_add_to_cart">Mua hàng</a>
+                                                            </div>
+                                                            <div class="combo_info_price">
+                                                                Cho 4 người
+                                                                <span class="woocommerce-Price-amount amount">
+                                                                    269.000
+                                                                    <span class="woocommerce-Price-currencySymbol">₫</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="combo_desc"> 1 Pizza size L + 1 Pizza size M + 1 Mỳ Ý + 1 Coca 390ml</div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item" style="width: 285px;">
+                                                <div id="new-tab" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                    <div class="tab_content">
+                                                        <div class="combo_item">
+                                                            <div class="combo_thumb">
+                                                                <img width="600" height="600" src="./Assests/img/combo-2-1.png" class="attachment-full size-full wp-post-image lazyloaded">
+    
+                                                            </div>
+                                                            <div class="combo_title_addcart">
+                                                                <h3>Combo 02</h3>
+                                                                <a href="#" class="button add_to_cart_button product_type_simple ajax_add_to_cart">Mua hàng</a>
+                                                            </div>
+                                                            <div class="combo_info_price">
+                                                                Cho 3 người
+                                                                <span class="woocommerce-Price-amount amount">
+                                                                    179.000
+                                                                    <span class="woocommerce-Price-currencySymbol">₫</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="combo_desc"> 1 Pizza size L + 1 Mỳ Ý + 1 Coca 390ml</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-item" style="width: 285px;">
+                                                <div id="new-tab" class="elm tab ui-tabs-panel ui-tabs-hide clearfix">
+                                                    <div class="tab_content">
+                                                        <div class="combo_item">
+                                                            <div class="combo_thumb">
+                                                                <img width="600" height="600" src="./Assests/img/combo-1-1.png" class="attachment-full size-full wp-post-image lazyloaded">
+                                                            </div>
+                                                            <div class="combo_title_addcart">
+                                                                <h3>Combo 01</h3>
+                                                                <a href="#" class="button add_to_cart_button product_type_simple ajax_add_to_cart">Mua hàng</a>
+                                                            </div>
+                                                            <div class="combo_info_price">
+                                                                Cho 2 người
+                                                                <span class="woocommerce-Price-amount amount">
+                                                                    139.000
+                                                                    <span class="woocommerce-Price-currencySymbol">₫</span>
+                                                                </span>
+                                                            </div>
+                                                            <div class="combo_desc"> 1 Pizza size S + 1 Salad + 1 Coca 390 ml</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-controls clickable" style="display: none;">
+                                <div class="owl-buttons">
+                                    <div class="owl-prev">prev</div>
+                                    <div class="owl-next">next</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elm tabs group tabs-hide tabs-slider">
+            <div class="owl-carousel owl-theme" style="opacity: 0; display: block;">
+                <div class="owl-wrapper-outer autoHeight" style="height: 0px;">
+                    <div class="owl-wrapper" style="width: 800px; left:0px; display:block;">
+                        <div class="owl-item" style="width: 100px">
+                            <div id="new-tab34" class="elm new-tab34 tab ui-tabs-panel ui-tabs-hide clearfix">
+                                <div class="tab_content">Empty tab. Edit page to add content here.</div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 100px">
+                            <div id="new-tab35" class="elm new-tab35 tab ui-tabs-panel ui-tabs-hide clearfix">
+                                <div class="tab_content">Empty tab. Edit page to add content here.</div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 100px">
+                            <div id="new-tab36" class="elm new-tab36 tab ui-tabs-panel ui-tabs-hide clearfix">
+                                <div class="tab_content">Empty tab. Edit page to add content here.</div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 100px">
+                            <div id="new-tab37" class="elm new-tab37 tab ui-tabs-panel ui-tabs-hide clearfix">
+                                <div class="tab_content">Empty tab. Edit page to add content here.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-controls clickable">
+                    <div class="owl-pagination">
+                        <div class="owl-page active">
+                            <span class></span>
+                        </div>
+                        <div class="owl-page">
+                            <span class></span>
+                        </div>
+                        <div class="owl-page">
+                            <span class></span>
+                        </div>
+                        <div class="owl-page">
+                            <span class></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End combo -->
+
+    <!-- Begin PhanHoi -->
+    <section class="elm css-phanHoi row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-all-phanHoi col-sm-12 column col-sm-12">
+                    <div class="col-conatiner">
+                        <div class="elm css-textTitle title-wrap">
+                            <h2 class="title">Phản hồi của khách hàng</h2>
+                        </div>
+                        <div class="testi_content">
+                            <div class="swiper-container testi_slider dc_testi_slider swiper-container-horizontal swiper-container-multirow">
+                                <div class="swiper-wrapper" style="width: 3510px; transform:translate3d(0px,0px,0px);">
+                                    <div class="swiper-slide swiper-slide-active" style="order:0; width:555px; margin-right:30px;">
+                                        <div class="testi_item">
+                                            <div class="testi_thumb">
+                                                <img class="size-full alignleft lazyloaded" src="./Assests/img/24.png" alt="Khách hàng Phượng Nguyễn">
+                                            </div>
+                                            <div class="testi_info">
+                                                <p class="testi_cont">
+                                                    "Thấy mọi người review khá tốt nên mình gọi thử. Đầu tiên là vô cùng hài lòng với khoản Ship. Mình gọi giờ cao điểm, hẹn 1 tiếng lấy mà mới 30ph đã có nv gọi lấy bánh. Bánh đến vẫn nóng hổi, ăn khá vừa miệng, chắc sẽ gọi ship dài dài"
+                                                </p>
+                                                <p class="testi_name">Phượng Nguyễn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-next" style="order: 6; margin-top: 30px; width: 555px; margin-right:30px;">
+                                        <div class="testi_item">
+                                            <div class="testi_thumb">
+                                                <img class="size-full alignleft lazyloaded" src="./Assests/img/15.png" alt="Khách hàng Hoàng Chiến">
+                                            </div>
+                                            <div class="testi_info">
+                                                <p class="testi_cont">
+                                                    "Đã nghe nói đến nhiều nhưng đến hôm nay mình mới được ăn ^^ Quán có 4 cơ sở nên rất thuận tiện để đặt giao hàng. Mình đặt ở Ngọc Khánh ngay gần nhà 1 pizza meat lovers và 1 pizza hải sản, rất nhanh bánh đã được mang đến và vẫn còn nóng"
+                                                </p>
+                                                <p class="testi_name">Hoàng Chiến</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="order: 1; width: 555px; margin-right: 30px;">
+                                        <div class="testi_item">
+                                            <div class="testi_thumb">
+                                                <img class="size-full alignleft lazyloaded" src="./Assests/img/13.png" alt="Khách hàng Nhật Nam">
+                                            </div>
+                                            <div class="testi_info">
+                                                <p class="testi_cont">
+                                                    "Nhà mình ngay Giảng Võ nên cũng rất ưa đặt pizza ở Pizza Express Ngọc Khánh gần nhà. Và quan trọng là chất lượng pizza ở đây mình thấy ngon lắm nhé. Giá tính ra cũng rẻ. Mình hay gọi size 24cm tính tiền cho dễ. 1 cái size 24 là 100k. 30cm là 140k"
+                                                </p>
+                                                <p class="testi_name">Nhật Nam</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="order: 7; width: 555px; margin-top: 30px; margin-right: 30px;">
+                                        <div class="testi_item">
+                                            <div class="testi_thumb">
+                                                <img class="size-full alignleft lazyloaded" src="./Assests/img/12.png" alt="Khách hàng Phuongmac17">
+                                            </div>
+                                            <div class="testi_info">
+                                                <p class="testi_cont">
+                                                    "Có mặt sau 40p, nóng hổi. Pizza khá giống pepperonis nhưng pepp mà để mua 1 tặng 1 thì nhân chán lắm, lèo tèo. Chẳng bù cho bạn này nhân vẫn đầy đặn, phô mai vừa vặn thơm ngon. Rất là ok! 3 đứa ăn 2 cái M mà lặc lè. Sẽ còn order dài."
+                                                </p>
+                                                <p class="testi_name">Phuongmac17</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="order: 2; width: 555px; margin-right: 30px;">
+                                        <div class="testi_item">
+                                            <div class="testi_thumb">
+                                                <img class="size-full alignleft lazyloaded" src="./Assests/img/19.png" alt="Khách hàng Lê Phương">
+                                            </div>
+                                            <div class="testi_info">
+                                                <p class="testi_cont">
+                                                    "Pizza Express Ngọc Khánh khá xa nhà mình nhưng thấy bạn bảo ăn cũng ngon, giá cũng rẻ, pizza sz 24cm cũng chỉ có 100k 1 cái thôi. Gọi hawaiian và beefy, cái nào cũng ngon, beefy cho nhiều phô mai lắm"
+                                                </p>
+                                                <p class="testi_name">Lê Phương</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="order: 8; width: 555px; margin-top: 30px; margin-right: 30px;">
+                                        <div class="testi_item">
+                                            <div class="testi_thumb">
+                                                <img class="size-full alignleft lazyloaded" src="./Assests/img/10.png" alt="Khách hàng Van Hai">
+                                            </div>
+                                            <div class="testi_info">
+                                                <p class="testi_cont">
+                                                    "Vỏ bánh giòn rụm, k cứng, lớp phô mai béo ngậy, thơm thơm. Tối k ăn hết mình cho vào tủ lạnh mai lôi ra ăn sáng vẫn đc, mặc dù cho vào lò vi sóng mà bánh gần như vẫn giữ đc hương vị lúc đầu"
+                                                </p>
+                                                <p class="testi_name">Van Hai</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="order: 3; width: 555px; margin-right: 30px;">
+                                        <div class="testi_item">
+                                            <div class="testi_thumb">
+                                                <img class="size-full alignleft lazyloaded" src="./Assests/img/9.png" alt="Khách hàng Thư Hoàng">
+                                            </div>
+                                            <div class="testi_info">
+                                                <p class="testi_cont">
+                                                    "Đợt trước lớp mình ăn liên hoan nên gọi Pizza ở đây ship đến. Gọi 2 loại là pizza bò băm và pizza xúc xích. Về bề ngoài thì trông cũng đẹp mắt, ngon miệng và tương đối đầy đặn. Vỏ bánh có độ dày vừa phải, không bị mỏng quá và giòn Vì gọi 2 vị cơ bản nên cũng khá dễ ăn"
+                                                </p>
+                                                <p class="testi_name">Thư Hoàng</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="order: 9; width: 555px; margin-right: 30px;">
+                                        <div class="testi_item">
+                                            <div class="testi_thumb">
+                                                <img class="size-full alignleft lazyloaded" src="./Assests/img/4.png" alt="Khách hàng Hà Trần">
+                                            </div>
+                                            <div class="testi_info">
+                                                <p class="testi_cont">
+                                                    "Mỳ nhiều ú ụ mà mình thấy sợi mỳ ở đây ngon hơn những chỗ khác. Sốt bò băm mà có nhiều thịt bò với nước ăn khá là ngon. Tóm lại mình khá thích ăn mỳ ý ở đây"
+                                                </p>
+                                                <p class="testi_name">Hà Trần</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="swiper-notification"></span>
+                            </div>
+                            <div class="testi_nav testi_next"></div>
+                            <div class="testi_nav testi_prev"></div>
+                            <div class="testi-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+                                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Begin CamKet -->
+    <section class="elm css-camKet row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-all-ChatLuongDanDau col-sm-3 column col-sm-3">
+                    <div class="col-container">
+                        <div class="elm css-img-footer1 shortcode single_image">
+                            <img class="lazyloaded" src="./Assests/img/footer_01.png" alt="Chất lượng dẫn đầu">
+                        </div>
+                        <div class="elm css-textTitleChatLuongDanDau title-wrap">
+                            <h3 class="title">Chất lượng dẫn đầu</h3>
+                        </div>
+                        <div class="elm css-textContentChatLuongDanDau text_block">
+                            <p>
+                                Chú trọng khâu tuyển chọn đội ngũ đầu bếp chuyên nghiệp, thực đơn của Pizza Express luôn được đổi mới, đa dạng với pizza nhiều hương vị, sandwich, mỳ ý và các món ăn nhanh khác.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-all-GiaHangDungGio col-sm-3 column col-sm-3">
+                    <div class="col-container">
+                        <div class="elm css-img-footer2 shortcode single_image">
+                            <img class="lazyloaded" src="./Assests/img/footer_02.png" alt="Giao hàng đúng giờ">
+                        </div>
+                        <div class="elm css-textTitleGiaoHangDungGio title-wrap">
+                            <h3 class="title">Giao hàng đúng giờ</h3>
+                        </div>
+                        <div class="elm css-textContentGiaoHangDungGio text_block">
+                            <p>
+                                Để tăng cường sự tin tưởng và yên tâm với khách hàng, Pizza Express cam kết luôn giao hàng đúng giờ và chi phí giao hàng rẻ nhất để đảm bảo khách hàng có thể nhận bánh trong thời gian nhanh nhất.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-all-PizzaTakeAway col-sm-3 column col-sm-3">
+                    <div class="col-container">
+                        <div class="elm css-img-footer3 shortcode single_image">
+                            <img class="lazyloaded" src="./Assests/img/footer_03.png" alt="Pizza Take Away">
+                        </div>
+                        <div class="elm css-textTitlePizzaTakeAway title-wrap">
+                            <h3 class="title">Pizza Take Away</h3>
+                        </div>
+                        <div class="elm css-textContentPizzaTakeAway text_block">
+                            <p>
+                                Lựa chọn cho mình một hướng đi mới để tạo nên sự khác biệt, mô hình Pizza take away - pizza mang đi giúp khách hàng tiết kiệm thời gian, đem đến sự tiện lợi tối ưu trong việc lựa chọn, thanh toán, đóng gói và nhận hàng.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-all-PhucVuChuyenNghiep col-sm-3 column col-sm-3">
+                    <div class="col-container">
+                        <div class="elm css-img-footer4 shortcode single_image">
+                            <img class="lazyloaded" src="./Assests/img/footer_04.png" alt="Phục vụ chuyên nghiệp">
+                        </div>
+                        <div class="elm css-textTitlePhucVuChuyenNghiep title-wrap">
+                            <h3 class="title">Phục vụ chuyên nghiệp</h3>
+                        </div>
+                        <div class="elm css-textContentPhucVuChuyenNghiep text_block">
+                            <p>
+                                Pizza Express cùng với đội ngũ nhân viên mang đầy sức trẻ và nhiệt huyết, chúng tôi luôn mong muốn đem lại cho khách hàng của mình chất lượng dịch vụ tốt nhất, luôn lắng nghe và chăm sóc những nhu cầu dù là nhỏ nhất của Quý khách.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End CamKet -->
+
+    <!-- Begin Footer -->
+    <footer class="elm css-footer row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div class="elm css-imglogo shortcode single-img">
+                    <img class="lazyloaded" src="./Assests/img/logo.png" alt="Pizza Express Logo">
+                </div>
+                <div class="elm css-title-lienHe title-wrap">
+                    <h4 class="title">Công ty TNHH Pizza Express Việt Nam</h4>
+                </div>
+                <div class="elm css-content-lienHe text_block footer_content">
+                    <p>
+                        Để đặt bánh pizza, vui lòng liên hệ tổng đài số: 
+                        <a href="tel:0334618813">0334.618.813</a>
+                    </p>
+                    <p>
+                        Để phản ánh chất lượng dịch vụ, vui lòng gọi số: 
+                        <a href="tel:0974019488">0974.019.488</a>
+                    </p>
+                    <p>
+                        Email: 
+                        <a href="mailto:thaong22.03@gmail.com">
+                            thaong22.03@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#">Chính sách bảo mật thông tin cá nhân</a>
+                    </p>
+                    <p>
+                        <a href="#">Chính sách đổi/trả sản phẩm và hoàn tiền</a>
+                    </p>
+                    <p>
+                        <a href="#">Chính sách thanh toán</a>
+                    </p>
+                </div>
+                <div class="elm css-imgFooterLine shortcode single_image">
+                    <img class="lazyloaded" src="./Assests/img/footer_line.png" alt="Pizza Express">
+                </div>
+                <div class="elm css-all-BanDo row row_inner">
+                    <div class="elm css-all-ViTri1 col-sm-3 column_inner">
+                        <div class="wrapper col-inner-container">
+                            <div class="elm css-imgSo1 shorcode single-image">
+                                <img class="lazyloaded" src="./Assests/img/so_01.png" alt="Địa chỉ số 1">
+                            </div>
+                            <div class="elm textBaDinh text_block">
+                                <p>107 D3 Ngọc Khánh, Ba Đình</p>
+                            </div>
+                            <div class="elm css-text-XemBanDo1">
+                                <a href="#" class="button" title="Xem trên bản đồ">
+                                    <i class="fa-location-arrow"></i>
+                                    Xem trên bản đồ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elm css-all-ViTri2 col-sm-3 column_inner">
+                        <div class="wrapper col-inner-container">
+                            <div class="elm css-imgSo2 shorcode single-image">
+                                <img class="lazyloaded" src="./Assests/img/so_02.png" alt="Địa chỉ số 2">
+                            </div>
+                            <div class="elm textThanhXuan text_block">
+                                <p>4 Ngõ 332 Nguyễn Trãi, Thanh Xuân</p>
+                            </div>
+                            <div class="elm css-text-XemBanDo2">
+                                <a href="#" class="button" title="Xem trên bản đồ">
+                                    <i class="fa-location-arrow"></i>
+                                    Xem trên bản đồ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elm css-all-ViTri3 col-sm-3 column_inner">
+                        <div class="wrapper col-inner-container">
+                            <div class="elm css-imgSo3 shorcode single-image">
+                                <img class="lazyloaded" src="./Assests/img/so_03.png" alt="Địa chỉ số 3">
+                            </div>
+                            <div class="elm textCauGiay text_block">
+                                <p>6 Đồng Bát, Cầu Giấy</p>
+                            </div>
+                            <div class="elm css-text-XemBanDo3">
+                                <a href="#" class="button" title="Xem trên bản đồ">
+                                    <i class="fa-location-arrow"></i>
+                                    Xem trên bản đồ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elm css-all-ViTri4 col-sm-3 column_inner">
+                        <div class="wrapper col-inner-container">
+                            <div class="elm css-imgSo4 shorcode single-image">
+                                <img class="lazyloaded" src="./Assests/img/so_04.png" alt="Địa chỉ số 4">
+                            </div>
+                            <div class="elm textHoangMai text_block">
+                                <p>52 Kim Đồng, Hoàng Mai</p>
+                            </div>
+                            <div class="elm css-text-XemBanDo4">
+                                <a href="#" class="button" title="Xem trên bản đồ">
+                                    <i class="fa-location-arrow"></i>
+                                    Xem trên bản đồ
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elm css-outDiaChi" style="height: 30px; clear: both; width: 100%;"></div>
+                <div class="elm css-all-footerBottom text_block">
+                    <p style="text-align: center;">
+                        <a href="#">
+                            <img width="150" height="57" class="size-large aligncenter lazyloaded" src="./Assests/img/DaThongBao.png" >
+                        </a>
+                    </p>
+                    <p style="text-align: center; color: #aaa;">
+                        <span style="font-size: 8pt;">Công ty TNHH Pizza Express Việt Nam số ĐKKD: 0334618813</span><br>
+                        <span style="font-size: 8pt;">Địa chỉ: X4, Yên Vĩnh, Dạ Trạch, Khoái Châu, Hưng Yên</span><br>
+                        <span style="font-size: 8pt;">Số điện thoại: 0334618813</span><br>
+                         
+                        <a style="color: #aaa; font-size: 8pt;" href="mailto:thaong22.03@gmail.com">Email: thaong22.03@gmail.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="./Assests/js/main.js"></script>
+</body>
+
+</html>

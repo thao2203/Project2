@@ -1,0 +1,578 @@
+/* Begin Banner */
+
+.bg-title {
+    background: url(../img/bg_title.png) center bottom no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bg-title h1 {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+    font-family: Sriracha;
+    font-size: 30px;
+    color: #fffc00;
+    font-weight: 400;
+    text-align: center;
+}
+
+.bg-title #breadcrumbs {
+    display: block;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    color: #FFF;
+}
+
+.bg-title #breadcrumbs a {
+    color: #FFF;
+}
+
+.clfw {
+    width: 100%!important;
+    clear: both!important;
+    display: block!important;
+    height: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+}
+/* End Banner */
+
+
+*{
+    margin:0;
+    padding:0;
+  }
+  .slide  img{
+    width: 100%;
+    height: 300px;
+    position: relative;
+  }
+  a{
+    text-decoration: none;/*Bỏ gạch chân*/
+    color: #696969;
+  }
+  a:hover{
+    color:#adad90 ;/*khi hover chuột vào màu chữ thay đổi*/
+  }
+  p{
+    font-size: 18px;
+  }
+  .container{
+    width: 100%;
+    margin: auto;
+  }
+  .slide .left1 h6{
+    font-size: 17px;
+    color: #FFFFFF;
+    position: absolute;/*luôn nằm trong một phần tử mẹ đang là relative*/
+    top:30px;
+    left: 75px;
+    width: 400px;
+  }
+  .slide .left1 h6:hover{
+    cursor: pointer;
+    color: #CCCC00;
+  }
+  .slide .left2 h6{
+    font-size: 17px;
+    color: #FFFFFF;
+    position: absolute;/*luôn nằm trong một phần tử mẹ đang là relative*/
+    top:30px;
+    left: 162px;
+    width: 400px;
+  }
+  .slide .left3 h6{
+    font-size: 17px;
+    color: #FFFFFF;
+    position: absolute;/*luôn nằm trong một phần tử mẹ đang là relative*/
+    top:30px;
+    left: 173px;
+    width: 400px;
+  }
+  .slide .left3 h6:hover{
+    cursor: pointer;
+    color: #CCCC00;
+  }
+  .between p{
+    position: absolute;
+    font-size: 50px;
+    top: 0px;
+    color: #fff;
+    font-style: oblique;
+    font-family: cursive;
+    left: 560px;
+  }
+  .right img{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top:30px;
+    left: 955px;
+  }
+  .right span{
+    position: absolute;
+    font-size: 20px;
+    top :30px;
+    left: 990px;
+    font-weight:bold;
+    color: #FFFFFF;
+  }
+  .right h5:hover{
+    cursor: pointer;
+    color: #CCCC00;
+  }
+  .right h5{
+    position: absolute;
+    font-size: 20px;
+    top :30px;
+    left: 1070px;
+    font-weight:bold;
+    color: #FFFFFF;
+  }
+  .search-box{
+    position: absolute;
+    top:42px;
+    right:90px;
+    transform: translate(-50%,-50%);/*(-50%,-50%) di chuyển yếu tố này trái và lên bằng 50%  kích thước tính dọc theo trục". -50%dọc theo trục x có nghĩa là "di chuyển tôi sang trái một nửa chiều rộng tính toán của tôi", tương tự như vậy đối với trục y. Lý do tại sao điều này là cần thiết là vì khi cài đặt top: 50%; left: 50%phần tử, bạn đang di chuyển góc trên cùng bên trái của phần tử đến trung tâm của phần tử mẹ. Trung tâm của phần tử, mặc dù, không thẳng hàng với trung tâm của phần tử mẹ. -*/
+    border:1px solid #FFFFFF;
+    height: 31px;
+    padding: 5px;
+  }
+  .search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+  }
+  .search-box:hover > .search-btn{
+    background: white;
+  }
+  .search-btn{
+    color: #FFFFFF;
+    float: right;
+    width: 33px;
+    height: 33px;
+    display: flex;/*hiển thị dl trên 1 hàng ngang theo 1 khối*/
+    justify-content: center;/*Căn chỉnh đặt btn ở trung tâm search box*/
+    align-items: center;/*Các hộp lề của các mục flex được căn giữa trong đường thẳng trên trục chéo. Nếu kích thước chéo của một mặt hàng lớn hơn thùng chứa flex, nó sẽ tràn đều theo cả hai hướng.*/
+    transition: 0.4s;/*Xác định hiệu ứng cho quá trình chuyển động trong 0.4s*/
+  }
+  .search-txt{
+    border: none;
+    background: none;
+    outline: none;/*Đường viền ngoài của txt = none*/
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 1.0s;
+    line-height: 40px;/*độ rộng của dòng*/
+    width: 0px;
+  }
+  
+  li{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  .menuchinh>ul>li{/*ul là con trực tiếp của menuchinh,> chứng tỏ li là con trực tiếp của ul*/
+    list-style: none;
+    float: left;
+    padding: 25px 35px;
+    position: relative;
+  }
+  .menuchinh>ul>li>a{
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .menuchinh>ul>li>ul{
+    display: none;
+    position: absolute;
+    background: #FFF;
+    font-size: 20px;
+    top: 68px;
+    left: -319px;
+    width: 1095px;
+    height: 300px;
+    z-index: 4;
+    background-image: url('Anh/10.jpg');
+    
+  }
+  .menuchinh>ul>li:hover ul{
+    display: inline;
+  }
+  /*.menuchinh>ul>li:hover{
+    background: yellow;
+    }*/
+    .menuchinh>ul>li>ul>li{
+      padding: 23px 214px;
+      float: left;
+      margin-left: -166px;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+    .menuchinh>ul>li>ul>li>ul>li{
+      text-transform: none;
+      font-size: 16px;
+      padding-top: 15px;
+    }
+    .cart{
+      color: #CCFFFF;
+      float: left;
+      width: 225px;
+      padding-top: 28px;
+      padding-left: 40px;
+      font-size: 14px;
+      height: 40px;
+      background-color: #FF9966;
+      text-transform: uppercase;
+    }
+    .menu h1{
+      position: absolute;
+      text-transform: uppercase;
+      top: 125px;
+      left: 225px;
+      font-size: 65px;
+      font-weight: bold;
+      color: #FFFFFF;
+      font-family: sans-serif;  
+    }
+    .menu p{
+      position: absolute;
+      text-transform: uppercase;
+      top: 222px;
+      left: 350px;
+      font-size: 20px;
+      border: 1px solid ;
+      color: #FFFFFF;
+      height: 40px;
+      width: 425px;
+      padding-top: 11px;
+      font-family: cursive;
+      text-align: center;
+    }
+    .dangky{
+      margin-top: 20px;
+      margin-left: 130px;
+      font-family: cursive;
+    }
+    .dangky span{
+      color: aqua;
+    }
+    
+    .anhsp1 img {
+       
+        height: 250px;
+        
+        transition: 1s;
+    }
+  .anhsp1 img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+  }
+  .anhspphu img{
+   width: 61px;
+   height: 61px;
+   padding: 2px 16px;
+  }
+  .anhspphu a{
+   display: inline-block;
+   align-items: center;
+   border: 1px solid #ebebeb;
+   justify-content: center;
+   overflow: hidden;
+   width: 94px;
+   height: 65px;
+   margin-top: 15px;
+  }
+  .chitietsp p{
+   color: black;
+   font-size: 20px;
+   font-weight: 500;
+   padding: 8px 0;
+  }
+  .chitietsp1 {
+    width: 380px;
+    
+}
+  .chitietsp1 h2{
+    color: #323c3f;
+    letter-spacing: .01em;
+    font: 700 16px/20px "Roboto";
+    font-family: sans-serif;
+    padding-bottom: 10px;
+  }
+  .chitietsp1 span{
+    font-size: 14px;
+    color: #333;
+    font-family: "Roboto",sans-serif;
+  }
+  
+  .chitiet li{
+    width: 100%;
+    display: table;
+    margin-bottom: 0px;
+  }
+  .chitiet li p{
+    display: table-cell;
+    width: 27%;
+    font-weight: 700;
+    padding-top: 2px;
+    color: #011523;
+    letter-spacing: .01em;
+    font: 500 16px/20px "Roboto";
+    font-family: sans-serif;
+  }
+  .chitiet li span{
+    display: table-cell;
+    width: 70%;
+    padding-top: 2px;
+    font-size: 16px;
+    color: rgba(2, 2, 6, 0.74);
+  }
+  .chitiet b{
+    font-size: 25px;
+    display: inline-block;
+    color: #f74351;
+    font-weight: 700;
+    margin-right: 10px;
+    font-family: "Roboto",sans-serif;
+  }
+  .themsp{
+    margin-top: 15px;
+  }
+  .btn {
+    
+    margin-left: 25px;
+    
+    line-height: 39px;
+    padding: 0 20px;
+    
+    cursor: pointer;
+    border: none; 
+    color: #FFF;
+    background: #850015;
+}
+  .qtyminus{
+   width: 40px;
+   float: left;
+   height: 40px;
+   font-size: 30px;
+   border: 1px solid #7f7676b0;
+   color: #0000009e;
+   text-align: center;
+  }
+  .qtyminus:hover{
+    cursor: pointer;
+  }
+  .qtyplus:hover{
+    cursor: pointer;
+  }
+  .qtyplus{
+   width: 40px;
+   float: left;
+   height: 30px;
+   font-size: 28px;
+   border: 1px solid #7f7676b0;
+   color: #000000b3;
+   text-align: center;
+   padding: 5px 0;
+  }
+  #qty{
+    font-size: 14px;
+    margin: 0;
+    width: 40px;
+    height: 38px;
+    float: left;
+    border-radius: 0px;
+    text-align: center;
+    padding: 0;
+  }
+  .theodungtich{
+    float: left;
+  }
+  .dungtich2{
+    margin-top: 75px;
+  }
+  .theodungtich1 {
+    
+    height: 251px;
+    background: #ffe7ba2b;
+}
+  .anhspphu1 img{
+    width: 464px;
+    height: 237px;
+    margin-top: 30px;
+  }
+  .theodungtich1 h1 {
+    text-align: center;
+    font-style: oblique;
+    margin-bottom: 10px;
+    margin-top: 33px;
+}
+  .theodungtich1 p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    color: #151313b0;
+    margin-left: 58px;
+    margin-bottom: 80px;
+  }
+  .theodungtich1 span{
+    font-size: 15px;
+    color: #00000045;
+    font-weight: 600;
+    margin-left: 20px;
+  }
+  .gia{
+   float: left;
+   margin-left: 70px;
+   color: red;
+   font-size: 20px;
+   font-style: oblique;
+   font-weight: 700;
+  }
+  .mua {
+    float: left;
+    margin-left: 33px;
+    margin-top: 10px;
+}
+  .sp{
+    margin-bottom: 30px;
+  }
+  .sp h1{
+    color: #bf9a61;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .spphu{
+    height: 350px;
+    width: auto;
+  }
+  .spphu img{
+   width: 200px;
+   height: 250px;
+   padding: 0 10px;
+   border-top-left-radius: 15%;
+   border-bottom-right-radius: 15%;
+  }
+  .spphu img:hover{
+    opacity: 0.7;
+  }
+  .anhphu{
+    margin-left: 135px;
+    margin-top: 30px;
+    width: auto;
+  }
+  .tensp{
+    margin-left: 135px;
+    margin-top: 5px;
+    width: auto;
+  }
+  .tensp p{
+   float: left;
+   padding: 0 70px;
+   font-size: 16px;
+   font-weight: 700;
+   font-family: "Roboto",sans-serif;
+   color: #1f1f1fa3;
+  }
+  .tensp p:hover{
+    color: #bf9a61;
+  }
+  .giasp{
+    margin-left: 135px;
+    margin-top: 30px;
+    width: auto;
+  }
+  .giasp p{
+   color: #f62d3e;
+   font-size: 16px;
+   font-weight: 600;
+   float: left;
+   font-family: "Roboto",sans-serif;
+   padding: 0 77px;
+  }
+  .vanchuyen{
+    width: 1350px;
+    height: 45px;
+    float: left;
+    margin-bottom: 60px;
+    background: #c00a27;
+  }
+  .vanchuyen p{
+    color: #FFF;
+    margin-top: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: sans-serif;
+  }
+  .footer{
+    float: left;
+    margin-top: 70px;
+    width: 1350px;
+    height: 300px;
+    background-color: black;
+    padding-top: 50px;
+  }
+  .footer p{
+    font-size: 20px;
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .footer li{
+    margin-top: 10px;
+  }
+  .footer h5{
+    color:#B4CDCD;
+    font-size: 18px;
+  }
+  .chinhsach{
+    float:left;
+    margin-left:230px;
+  }
+  .contact{
+    float: left;
+    margin-top: -130px;
+    margin-left: 580px;
+  }
+  .contact i{
+    color: #C0C0C0;
+    font-size: 30px;
+    padding: 0px 7px;
+    margin-top: 35px;
+  }
+  .contact h3{
+    margin-top: 30px;
+    color: #FFDAB9;
+    margin-left: 56px;
+    font-size: 50px;
+    font-family: cursive;
+    font-style: italic;
+  }
+  .shop i{
+    color:#FFCC00;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .shop span:hover
+  {
+    color: #CCCC00;
+    cursor: pointer;
+    width: 300px;
+    margin-left: 10px;
+  }
+  .chinhsach span:hover{
+    cursor: pointer;
+    color: #CCCC00;
+    margin-left: 10px;
+  }
+  

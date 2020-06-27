@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Đăng ký</title>
+    <script src="https://kit.fontawesome.com/974cf27236.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./Assests/css/dangKy.css">
+</head>
+<body>
+	<div class="dangki1">
+		<p style=" text-align: center;
+		font-size: 20px;
+		margin-bottom: 20px;">Đăng ký tài khoản</p>
+		<input type="text" name="" placeholder="Họ và tên" class="form" id="txtten"><i class="fas fa-user-alt"></i>
+		<input type="text" name="" placeholder="SDT" class="form" id="txtsdt"><i class="fas fa-envelope" style="margin-top: 57px;"></i>
+		<input type="password" name="" placeholder="Mật khẩu" class="form" id="txtmk"><i class="fas fa-lock" style="margin-top: 110px;"></i>
+		<input type="password" name="" placeholder="Nhập lại mật khẩu" class="form" id="txtnmk"><i class="fas fa-sign-in-alt" style="margin-top: 165px;"></i>
+		<input type="checkbox" name="" style="width: 22px;
+		height: 22px;
+		border:none;float: left;margin-right: 4px;"><p style="float: left;
+		padding-top: 5px;
+		font-size: 13px;
+		color: #666;">Tôi đồng ý</p>
+		<a href="#" id="sub"><button type="submit">Đăng Ký</button></a>
+		<input type="button" name="" value="             Đăng nhập bằng Facebook" class="dn" style=" background: blue;"><i class="fab fa-facebook-f" ></i>
+		<input type="button" name="" value="             Đăng nhập bằng Google+" class="dn" style="background: red; margin-bottom: 20px;"><i class="fab fa-google-plus-g"></i>
+        <a href="./dangNhap.html" class="dangki" >Đăng Nhập</a>
+        <a href="./trangChu.html" style="text-decoration: none; float: right; font-size: 15px; color: #a9001b;">Thoát</a>
+	</div>
+	<script type="text/javascript">
+		function KTMK(mk) {
+			rg = /[^~*&()^!@#]{1,20}/;
+			tim = mk.match(rg);
+			if (tim == mk)
+				return true;
+			else
+				return false;
+
+		}
+		function KTSDT(sdt){
+			var dong = /[0-9]{10}/;
+			var KT = sdt.match(dong);
+			if(KT==sdt)
+				return true;
+			else
+				return false;
+		}
+		function KTTen(Name){
+			var dong = /[^\s0-9@#]{1,50}/;
+			var KT = Name.match(dong);
+			if(KT==Name)
+				return true;
+			else
+				return false;
+		}
+			var ten=document.getElementById("txtten");
+			var sdt = document.getElementById("txtsdt");
+			var mk = document.getElementById("txtmk");
+			var nmk = document.getElementById("txtnmk");
+			document.getElementById("sub").addEventListener('click',function(){
+			if (KTTen(ten.value)==true && KTSDT(sdt.value) == true && KTMK(mk.value) == true) {
+				alert("Đăng ký thành công \n");
+			}
+			else
+			{
+				if(KTTen(ten.value)==false && KTSDT(sdt.value) == true && KTMK(mk.value) == true ){
+					ten.style.borderColor = "red"; 
+					alert("Tên không hợp lệ!!!");}
+				if(KTSDT(sdt.value)==false && KTTen(ten.value)==false&& KTMK(mk.value) == true ){
+					sdt.style.borderColor = "red"; 
+					alert("SDT không hợp lệ!!!");}
+				if(KTMK(mk.value)==true && KTTen(ten.value)==false && KTSDT(sdt.value) == false)
+				{
+					ten.style.borderColor = "red"; 
+					sdt.style.borderColor = "red"; 
+					alert("Vui lòng nhập lại thông tin tên và số điện thoại!!!");
+				}
+				if(KTMK(mk.value)==false && KTTen(ten.value)==true && KTSDT(sdt.value) == true)
+				{
+					mk.style.borderColor="red";
+					alert("Vui lòng nhập lại mật khẩu");
+				}
+				if(KTTen(ten.value)==false && KTSDT(sdt.value) == true && KTMK(mk.value) == false ){
+					ten.style.borderColor = "red"; 
+					mk.style.borderColor="red";
+					alert("Vui lòng nhập lại tên và mật khẩu");}
+					if(KTMK(mk.value)==false && KTTen(ten.value)==true && KTSDT(sdt.value) == false)
+				{
+					mk.style.borderColor="red";
+					sdt.style.borderColor = "red"; 
+					alert("Vui lòng nhập lại số điện thoại và mật khẩu");
+				}
+				if(KTTen(ten.value)==false && KTSDT(sdt.value) == false && KTMK(mk.value) == false ){
+					ten.focus();
+					alert("Vui lòng nhập thông tin");}
+			}
+		})
+	</script>
+</body>
+</html>

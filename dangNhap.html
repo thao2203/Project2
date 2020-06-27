@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Đăng nhập</title>
+    <script src="https://kit.fontawesome.com/974cf27236.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./Assests/css/dangNhap.css">
+	<script>
+		function showPass()
+		{
+			var pass = document.getElementById('txtmk');
+			if(document.getElementById('check').checked)
+			{
+				pass.setAttribute('type','text');
+			}else{
+				pass.setAttribute('type','password');
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="dangnhap1">
+        <p>Đăng nhập tài khoản</p>
+		<input type="text" name="" placeholder="SDT" class="sdt" id="txtsdt"><i class="fas fa-envelope"></i>
+		<input type="password" name="" placeholder="Mật khẩu" class="mk" id="txtmk"><i class="fas fa-lock" style="margin-top: 56px;"></i>
+		<input type="checkbox" name="" id="check"onclick="showPass();"><p style="float: left;
+		padding-top: 5px;
+		font-size: 14px;
+		color: #666;"  >Nhớ mật khẩu</p>
+		<a href="#"id="sub"><button type="submit" style="cursor: pointer;" >Đăng nhập</button></a>
+		<p class="or">Hoặc sử dụng Facebook | Google</p>
+		<a href="https://www.facebook.com/"><input type="button" name="" value="        Đăng nhập bằng Facebook" class="dn" style="cursor: pointer; background: blue;"><i class="fab fa-facebook-f" ></i></a>
+		<a href="https://www.google.com/"><input type="button" name="" value="        Đăng nhập bằng Google+" class="dn" style="cursor: pointer; background: red;margin-top: 5px;margin-bottom: 10px;"><i class="fab fa-google-plus-g"style="background: #f1120700;margin-left: -245px;margin-top: 10px;"></i></a>
+		<a href="./dangKy.html" class="dangki">Đăng ký</a>
+		<a href="./trangChu.html" style="float: right; font-size: 15px; color: #a9001b;">Thoát</a>
+		</div>
+		<script type="text/javascript">
+			var sdt=document.querySelector('.sdt');
+			var mk=document.querySelector('.mk');
+			document.getElementById("sub").addEventListener('click',function(){
+				if(sdt.value=='0965301915' &&  mk.value=='23061999')
+				{
+					this.attributes[0].value="Admin.html";
+				}
+				if(sdt.value!='0965301915'&& mk.value=='23061999')
+				{
+					alert("Vui lòng nhập lại số điện thoại!");
+					sdt.style.border = "2px solid red";  
+					sdt.focus();
+				}
+
+				if( mk.value!='23061999' && sdt.value=='0965301915')
+				{
+					alert("Vui lòng nhập lại mật khẩu!");
+					mk.style.border = "2px solid red";  
+					mk.focus();
+				}
+				if(sdt.value!='0965301915'&& mk.value!='23061999')
+				{
+					alert("Vui lòng nhập lại thông tin!");
+					sdt.focus();
+				}
+			})
+		</script>
+	</body>
+	</html>
