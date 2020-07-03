@@ -39,29 +39,30 @@
 		<script type="text/javascript">
 			var sdt=document.querySelector('.sdt');
 			var mk=document.querySelector('.mk');
-			document.getElementById("sub").addEventListener('click',function(){
-				if(sdt.value=='0965301915' &&  mk.value=='23061999')
+			document.getElementById("sub").addEventListener('click',function()
+			{
+				if(sdt.value=='0334618813' &&  mk.value=='0334618813')
 				{
-					this.attributes[0].value="Admin.html";
+					this.attributes[0].value="quanTri.html";
 				}
-				if(sdt.value!='0965301915'&& mk.value=='23061999')
-				{
-					alert("Vui lòng nhập lại số điện thoại!");
-					sdt.style.border = "2px solid red";  
-					sdt.focus();
-				}
+				// if(sdt.value!='0334618813'&& mk.value=='thaonguyen')
+				// {
+				// 	alert("Vui lòng nhập lại số điện thoại!");
+				// 	sdt.style.border = "2px solid red";  
+				// 	sdt.focus();
+				// }
 
-				if( mk.value!='23061999' && sdt.value=='0965301915')
-				{
-					alert("Vui lòng nhập lại mật khẩu!");
-					mk.style.border = "2px solid red";  
-					mk.focus();
-				}
-				if(sdt.value!='0965301915'&& mk.value!='23061999')
-				{
-					alert("Vui lòng nhập lại thông tin!");
-					sdt.focus();
-				}
+				// if( mk.value!='thaonguyen' && sdt.value=='0334618813')
+				// {
+				// 	alert("Vui lòng nhập lại mật khẩu!");
+				// 	mk.style.border = "2px solid red";  
+				// 	mk.focus();
+				// }
+				// if(sdt.value!='0334618813'&& mk.value!='thaonguyen')
+				// {
+				// 	sdt.focus();
+				// 	alert("Vui lòng nhập lại thông tin!");
+				// }
 			})
 		</script>
 	</body>

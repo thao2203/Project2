@@ -97,22 +97,14 @@ button:focus {
         text-align: center;
 }
 
-/* nav {
-    height: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 100000000;
-} */
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 999999999999999999;
   }
-/* #menu {
-    overflow: hidden;
-} */
+
 
 .container{
     max-width: 1170px;
@@ -145,8 +137,8 @@ button:focus {
     clear: both;
 }
 
-.kingComposer div.column, 
-.kingComposer div.column_inner {
+.column, 
+.column_inner {
     clear: none;
 }
 
@@ -167,7 +159,7 @@ body a#festi-cart.festi-cart.festi-cart-customize div.festi-cart-content span.fe
     color: #fff700;
 }
 
-body a#festi-cart::after, 
+/* body a#festi-cart::after, 
 body a#festi-cart::before,
 body a#festi-cart *::after, 
 body a#festi-cart *::before, 
@@ -187,13 +179,13 @@ body div.festi-cart-widget-products-content::before,
 body div.festi-cart-widget-products-content *::after, 
 body div.festi-cart-widget-products-content *::before {
     content: none;
-}
+} */
 
 .css-bg-a9001b{
     background: #a9001b;
 }
 
-body.css-system .css-bgc00a27 {
+.css-bgc00a27 {
     background: #c00a27;
 }
 
@@ -234,14 +226,8 @@ body.css-system .css-bgc00a27 {
     body.css-system .css-right-slide{
         width: 87%;
     }
-    body.css-system .css-all-ChatLuongDanDau, 
-    body.css-system .css-all-GiaHangDungGio, 
-    body.css-system .css-all-PizzaTakeAway, 
-    body.css-system .css-all-PhucVuChuyenNghiep,
-    body.css-system .css-all-ViTri1,
-    body.css-system .css-all-ViTri2,
-    body.css-system .css-all-ViTri3,
-    body.css-system .css-all-ViTri4 {
+    .css-all-item-width25,
+    .css-all-ViTri-width25{
         width: 25%;
     }
     
@@ -532,7 +518,7 @@ body.css-system .css-menu1 {
 }
 
 .menu_top ul.menu li {
-    width: 16.666%;
+    width: 20%;
     float: left;
     list-style: none;
     text-align: center;
@@ -589,26 +575,12 @@ body.css-system .css-camKet {
     padding-bottom: 50px;
 }
 
-body.css-system .css-img-footer1,
-body.css-system .css-img-footer2,
-body.css-system .css-img-footer3,
-body.css-system .css-img-footer4 {
+.css-img-footer{
     text-align: center;
     margin-bottom: 30px;
 }
 
-body.css-system .css-textTitleChatLuongDanDau.title,
-body.css-system .css-textTitleChatLuongDanDau .title, 
-body.css-system .css-textTitleChatLuongDanDau .title a.title_link,
-body.css-system .css-textTitleGiaoHangDungGio.title,
-body.css-system .css-textTitleGiaoHangDungGio .title, 
-body.css-system .css-textTitleGiaoHangDungGio .title a.title_link,
-body.css-system .css-textTitlePizzaTakeAway.title,
-body.css-system .css-textTitlePizzaTakeAway .title, 
-body.css-system .css-textTitlePizzaTakeAway .title a.title_link,
-body.css-system .css-textTitlePhucVuChuyenNghiep.title,
-body.css-system .css-textTitlePhucVuChuyenNghiep .title, 
-body.css-system .css-textTitlePhucVuChuyenNghiep .title a.title_link {
+.css-textHeadCamKet .title {
     color: #c00a27;
     font-weight: 600;
     text-transform: uppercase;
@@ -617,14 +589,7 @@ body.css-system .css-textTitlePhucVuChuyenNghiep .title a.title_link {
     margin-bottom: 20px;
 }
 
-body.css-system .css-textContentChatLuongDanDau, 
-body.css-system .css-textContentChatLuongDanDau p,
-body.css-system .css-textContentGiaoHangDungGio, 
-body.css-system .css-textContentGiaoHangDungGio p,
-body.css-system .css-textContentPizzaTakeAway, 
-body.css-system .css-textContentPizzaTakeAway p,
-body.css-system .css-textContentPhucVuChuyenNghiep, 
-body.css-system .css-textContentPhucVuChuyenNghiep p {
+.css-textContentCamKet p {
     font-size: 14px;
     font-style: italic;
     text-align: center;
@@ -645,7 +610,7 @@ body.css-system .css-imglogo {
     margin-bottom: 30px;
 }
 
-body.css-system .css-title-lienHe.title, body.css-system .css-title-lienHe .title, body.css-system .css-title-lienHe .title a.title_link {
+.css-title-lienHe .title{
     color: #fff000;
     font-weight: 600;
     text-transform: uppercase;
@@ -654,11 +619,11 @@ body.css-system .css-title-lienHe.title, body.css-system .css-title-lienHe .titl
     margin-bottom: 8px;
 }
 
-body.css-system .css-content-lienHe {
+.css-content-lienHe {
     padding-bottom: 15px;
 }
-body.css-system .css-content-lienHe, 
-body.css-system .css-content-lienHe p {
+.css-content-lienHe, 
+.css-content-lienHe p {
     color: #fff;
     font-size: 14px;
     text-align: center;
@@ -668,51 +633,29 @@ body.css-system .css-content-lienHe p {
     color: #fff;
 }
 
-body.css-system .css-imgFooterLine {
+.css-imgFooterLine {
     text-align: center;
     margin-bottom: 30px;
 }
 
-body.css-system .css-imgSo1,
-body.css-system .css-imgSo2,
-body.css-system .css-imgSo3,
-body.css-system .css-imgSo4 {
+.css-imgSo{
     text-align: center;
     margin-bottom: 15px;
 }
-
-body.css-system .textBaDinh,
-body.css-system .textThanhXuan,
-body.css-system .textCauGiay,
-body.css-system .textHoangMai {
-    padding-bottom: 10px;
-}
-
-body.css-system .textBaDinh, 
-body.css-system .textBaDinh p,
-body.css-system .textThanhXuan, 
-body.css-system .textThanhXuan p,
-body.css-system .textCauGiay, 
-body.css-system .textCauGiay p,
-body.css-system .textHoangMai, 
-body.css-system .textHoangMai p {
+ 
+.textViTriSo p {
     color: #fff;
     font-size: 14px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
-body.css-system .css-text-XemBanDo1,
-body.css-system .css-text-XemBanDo2,
-body.css-system .css-text-XemBanDo3,
-body.css-system .css-text-XemBanDo4 {
+.css-text-XemBanDo {
     text-align: center;
     display: block;
 }
 
-body.css-system .css-text-XemBanDo1 .button,
-body.css-system .css-text-XemBanDo2 .button,
-body.css-system .css-text-XemBanDo3 .button,
-body.css-system .css-text-XemBanDo4 .button {
+.css-text-XemBanDo .button {
     color: #fff000;
     background-color: rgba(255,255,255,0);
     font-size: 14px;

@@ -52,83 +52,38 @@
                     <div class="col-container">
                         <div class="widget widget_nav_menu elm">
                             <div class="menu-cart-container">
-                                <!-- <ul>
-                                    <li> -->
-                                        <a href="giohang.html" title="Giỏ hàng" class=" cart-gioHang" style="float: right;">
-                                            Giỏ hàng:
-                                            <span id="itemCount" style="display: inline; font-size: 12px;">1</span>
-                                            <i class="fa fa-cart-arrow-down" style="margin-left: 10px;"></i>
-                                        </a>
-                                        <ul>
-                                            <li>
-                                                <div class="container1">
-                                                   
-                                                    <!-- <div class="cart-items">
-                                                       
-                                                        <div class="cart-row">
-                                                            <div class="cart-item cart-column">
-                                                                <img src="./Assests/img/P1rs1.jpg" style="width: 40px;height: 50px;">
-                                                                <span class="cart-item-title">P1. Beefy Pizza</span>
-                                                                <span > - </span>
-                                                                <span >S</span>
-                                                                <span > - </span>
-                                                                <spans >1</spans>
-                                                            </div>
-                                                            
-                                                            <div class="cart-quantity cart-column">
-                                                                <button class="btn btn-danger" type="button" onclick="xoa()">Xóa</button>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                        
-                                                    </div>
-                                                    <div class="cart-items">
-                                                       
-                                                        <div class="cart-row">
-                                                            <div class="cart-item cart-column">
-                                                                <img src="./Assests/img/P1rs1.jpg" style="width: 40px;height: 50px;">
-                                                                <span class="cart-item-title">P1. Beefy Pizza</span>
-                                                                <span > - </span>
-                                                                <span >S</span>
-                                                                <span > - </span>
-                                                                <spans >1</spans>
-                                                            </div>
-                                                            
-                                                            <div class="cart-quantity cart-column">
-                                                                <button class="btn btn-danger" type="button" onclick="xoa()">Xóa</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="cart-items">
-                                                       
-                                                        <div class="cart-row">
-                                                            <div class="cart-item cart-column">
-                                                                <img src="./Assests/img/P1rs1.jpg" style="width: 40px;height: 50px;">
-                                                                <span class="cart-item-title">P1. Beefy Pizza</span>
-                                                                <span > - </span>
-                                                                <span >S</span>
-                                                                <span > - </span>
-                                                                <spans >1</spans>
-                                                            </div>
-                                                            
-                                                            <div class="cart-quantity cart-column">
-                                                                <button class="btn btn-danger" type="button" onclick="xoa()">Xóa</button>
-                                                            </div>
-                                                        </div>
-                                                    </div> -->
-                                                    <div class="cart-total">
-                                                        <strong class="cart-total-title" style="display: inline;">Tổng tiền:</strong>
-                                                        <span class="cart-total-price">90.000đ</span>
-                                                    </div>
-                                                    <a href="./tienHanhThanhToan.html">
-                                                        <button class="btn btn-primary btn-purchase" type="button" id="emptyCart" style="display: inline;">Tiến hành thanh toán</button>
-                                                        </a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    <!-- </li>
-                                </ul> -->
+                                <a href="giohang.html" title="Giỏ hàng" class=" cart-gioHang" style="float: right;">
+                                    Giỏ hàng:
+                                    <span id="itemCount" style="display: inline; font-size: 12px;">1</span>
+                                    <i class="fa fa-cart-arrow-down" style="margin-left: 10px;"></i>
+                                </a>
+                                <div class="container1">
+                                    <div class="cart-items">
+                                        <div class="cart-row">
+                                            <div class="cart-item cart-column">
+                                                <img src="./Assests/img/P1rs1.jpg" style="width: 40px;height: 50px;">
+                                                <span class="cart-item-title">P1. Beefy Pizza</span>
+                                                <span> - </span>
+                                                <span> S </span>
+                                                <span> - </span>
+                                                <spans> 1 </spans>
+                                            </div>
+                                            <div class="cart-quantity cart-column">
+                                                <button class="btn btn-danger" type="button"
+                                                    onclick="xoaGioHang($(this))">Xóa</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-total">
+                                        <strong class="cart-total-title" style="display: inline;">Tổng tiền:</strong>
+                                        <span class="cart-total-price">90.000đ</span>
+                                    </div>
+                                    <a href="./tienHanhThanhToan.html">
+                                        <button class="btn btn-primary btn-purchase" type="button" id="emptyCart"
+                                            style="display: inline;">Tiến hành thanh toán</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -163,7 +118,7 @@
                                     </li>
                                     <li id="menu-item-208"
                                         class="thucdon menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-208">
-                                        <a href="thucDon.html" aria-current="page">Thực đơn</a>
+                                        <a href="trangChu.html#home_thucdon" aria-current="page">Thực đơn</a>
                                     </li>
                                     <li id="menu-item-78"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78">
@@ -172,10 +127,6 @@
                                     <li id="menu-item-75"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menuitem-75">
                                         <a href="chinhSach.html">Chính sách</a>
-                                    </li>
-                                    <li id="menu-item-83"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-83">
-                                        <a href="blog.html">Blog</a>
                                     </li>
                                     <li id="menu-item-79"
                                         class="menu-item menu-item-type-post menu-item-object-page menu-item-79">
@@ -225,90 +176,94 @@
     <div class="clfw"></div>
 
     <!-- Begin content -->
-    <div id="chitietgiohang">
-        <table id="example1">
-            <tr>
-                <th>Ảnh sản phẩm</th>
-                <th>Sản phẩm</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
-                <th style="width: 190px">Tổng</th>
-                <th>Xóa</th>
-            </tr>
-            <tr>
-                <td><img src="./Assests/img/P1rs1.jpg"></td>
-                <td style="color: #333;font-weight: 700;">P1. Beefy Pizza</td>
-                <td style="font-size: 15px;color: #c00a27;font-weight: 700;">110000<u style="margin-left: 10px">đ</u>
-                </td>
-                <td style="width: 170px">
-                    <div class="input">
-                        <input class="variantID" type="hidden" name="variantId" value="1">
-                        <input type="text" maxlength="12" readonly="" min="0" class="so" id="qtyItem1" name="Lines"
-                            size="4" value="1">
-                        <button onclick="var result = document.getElementById('qtyItem1');
-                    var qtyItem1 = result.value;
-                    var kq=0;
-                    if( !isNaN( qtyItem1 ) && qtyItem1<10) result.value++;
-                    kq=eval(result.value)*110000;
-                    txtkq.value=kq;
-                    txttt.value=kq;
-                    return false;" class="dau" type="button" style="margin-left: 1px;">+</button>
-                        <button onclick="var result = document.getElementById('qtyItem1');
-                    var qtyItem1 = result.value;
-                    var kq=0;
-                    if( !isNaN( qtyItem1 ) && qtyItem1>1) result.value--;
-                    kq=eval(result.value)*110000;
-                    txtkq.value=kq;
-                    txttt.value=kq;
-                    return false;" class="dau" type="button">-</button>
+    <section id="menu" class="elm row">
+        <div class="row-container container">
+            <div class="wrap-columns">
+                <div id="chitietgiohang" class="elm col-sm-12 column col-sm-12">
+                    <table id="example1">
+                        <tr>
+                            <th>Ảnh sản phẩm</th>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Tổng</th>
+                            <th>Xóa</th>
+                        </tr>
+                        <tr>
+                            <td><img src="./Assests/img/P1rs1.jpg"></td>
+                            <td style="color: #333;font-weight: 700;">P1. Beefy Pizza</td>
+                            <td style="font-size: 15px;color: #c00a27;font-weight: 700;">110000<u
+                                    style="margin-left: 10px">đ</u>
+                            </td>
+                            <td style="width: 170px">
+                                <div class="input">
+                                    <input class="variantID" type="hidden" name="variantId" value="1">
+                                    <input type="text" maxlength="12" readonly="" min="0" class="so" id="qtyItem1"
+                                        name="Lines" size="4" value="1">
+                                    <button onclick="var result = document.getElementById('qtyItem1');
+                                var qtyItem1 = result.value;
+                                var kq=0;
+                                if( !isNaN( qtyItem1 ) && qtyItem1<10) result.value++;
+                                kq=eval(result.value)*110000;
+                                txtkq.value=kq;
+                                txttt.value=kq;
+                                return false;" class="dau" type="button" style="margin-left: 1px;">+</button>
+                                    <button onclick="var result = document.getElementById('qtyItem1');
+                                var qtyItem1 = result.value;
+                                var kq=0;
+                                if( !isNaN( qtyItem1 ) && qtyItem1>1) result.value--;
+                                kq=eval(result.value)*110000;
+                                txtkq.value=kq;
+                                txttt.value=kq;
+                                return false;" class="dau" type="button">-</button>
+                                </div>
+                            </td>
+                            <td><input type="text" name="" id="txtkq" value="110000"
+                                    style="border: none;text-align: center;color: #c00a27;font-size: 15px;font-weight: 700;width: 65px"><u
+                                    style="color: #c00a27;font-weight: 700;font-size: 15px">đ</u></td>
+                            </td>
+                            <td><i class="fas fa-trash-alt" onclick="deleteRow($(this))"></i></td>
+                        </tr>
+                        
+                    </table>
+
+
+                </div>
+                <div class="bg_cart shopping-cart-table-total col-sm-12 column col-sm-12">
+                    <div class="table-total">
+                        <table class="table ">
+                            <tbody>
+                                <tr>
+                                    <td class="total-text" style="font-weight: 700; color: #111f1fad;">Tổng tiền thanh
+                                        toán
+                                    </td>
+                                    <td>
+                                        <input type="text" name="" value="110000" id="txttt"
+                                            style="border: none;width: 65px;font-size: 15px;font-weight: 700;color: #c00a27;"><u
+                                            style="font-weight: 700;color: #c00a27;">đ</u>
+                                        </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </td>
-                <td><input type="text" name="" id="txtkq" value="110000"
-                        style="border: none;text-align: center;color: #c00a27;font-size: 15px;font-weight: 700;width: 65px"><u
-                        style="color: #c00a27;font-weight: 700;font-size: 15px">đ</u></td>
-                </td>
-                <td><i class="fas fa-trash-alt" onclick="deleteRow(this)"></i></td>
-            </tr>
-        </table>
-        <div class="row margin-top-20  margin-bottom-40">
-            <div class="col-lg-7 col-md-7">
-                <div class="form-cart-button">
-                    <div class=""><a href="./trangChu.html" class="form-cart-continue">Tiếp tục mua hàng</a>
-                    </div>
+                    <!-- <div> -->
+                        <a id="tienhanhthanhtoanRemove" href="./tienHanhThanhToan.html" onclick="window.location.href='/checkout'"
+                        class="btn-checkout-cart col-sm-6" title="Thanh toán">Tiến hành thanh toán</a>
+                        <div class="margin-top-20  margin-bottom-40 col-sm-6">
+                            <a href="./trangChu.html#home_thucdon" class="form-cart-continue">Tiếp tục mua hàng</a>
+                        </div>
+                    <!-- </div> -->
                 </div>
             </div>
-            <div class="col-lg-5 col-md-5 bg_cart shopping-cart-table-total">
-                <div class="table-total">
-                    <table class="table ">
-                        <tbody>
-                            <tr>
-                                <td class="total-text" style="font-weight: 700; color: #111f1fad;">Tổng tiền thanh toán
-                                </td>
-                                <td><input type="text" name="" value="110000" id="txttt"
-                                        style="border: none;width: 65px;font-size: 15px;font-weight: 700;color: #c00a27;"><u
-                                        style="font-weight: 700;color: #a06810;">đ</u></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div><a href="tienhanhthanhtoan.html" onclick="window.location.href='/checkout'"
-                    class="btn-checkout-cart" title="Thanh toán">Tiến hành thanh toán</a>
-            </div>
         </div>
-    </div>
-    
-    <script type="text/javascript">
-        function deleteRow(r) {
-            var i = confirm("Bạn có chắc chắn muốn xóa hay không?");
-            if (i == true) {
-                document.getElementById("chitietgiohang").remove();
-                txt.innerHTML = 'Không có sản phẩm nào. Quay lại cửa hàng để tiếp tục mua sắm.';
-            }
-        }
-    </script>
+    </section>
+
+
     
 
+
     </div>
-    <div class="vanchuyen">
+    <div class="vanchuyen" style="margin-top: 100px;">
         <p>Miễn phí vận chuyển cho đơn hàng trên 500.000Đ</p>
     </div>
     <!-- End content -->
@@ -317,15 +272,15 @@
     <section class="elm css-camKet row">
         <div class="row-container container">
             <div class="wrap-columns">
-                <div class="elm css-all-ChatLuongDanDau col-sm-3 column col-sm-3">
+                <div class="elm css-all-item-width25 col-sm-3 column">
                     <div class="col-container">
-                        <div class="elm css-img-footer1 shortcode single_image">
+                        <div class="elm css-img-footer shortcode single_image">
                             <img class="lazyloaded" src="./Assests/img/footer_01.png" alt="Chất lượng dẫn đầu">
                         </div>
-                        <div class="elm css-textTitleChatLuongDanDau title-wrap">
+                        <div class="elm css-textHeadCamKet title-wrap">
                             <h3 class="title">Chất lượng dẫn đầu</h3>
                         </div>
-                        <div class="elm css-textContentChatLuongDanDau text_block">
+                        <div class="elm css-textContentCamKet text_block">
                             <p>
                                 Chú trọng khâu tuyển chọn đội ngũ đầu bếp chuyên nghiệp, thực đơn của Pizza Express luôn
                                 được đổi mới, đa dạng với pizza nhiều hương vị, sandwich, mỳ ý và các món ăn nhanh khác.
@@ -333,15 +288,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="elm css-all-GiaHangDungGio col-sm-3 column col-sm-3">
+                <div class="elm css-all-item-width25 col-sm-3 column">
                     <div class="col-container">
-                        <div class="elm css-img-footer2 shortcode single_image">
+                        <div class="elm css-img-footer shortcode single_image">
                             <img class="lazyloaded" src="./Assests/img/footer_02.png" alt="Giao hàng đúng giờ">
                         </div>
-                        <div class="elm css-textTitleGiaoHangDungGio title-wrap">
+                        <div class="elm css-textHeadCamKet title-wrap">
                             <h3 class="title">Giao hàng đúng giờ</h3>
                         </div>
-                        <div class="elm css-textContentGiaoHangDungGio text_block">
+                        <div class="elm css-textContentCamKet text_block">
                             <p>
                                 Để tăng cường sự tin tưởng và yên tâm với khách hàng, Pizza Express cam kết luôn giao
                                 hàng đúng giờ và chi phí giao hàng rẻ nhất để đảm bảo khách hàng có thể nhận bánh trong
@@ -350,15 +305,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="elm css-all-PizzaTakeAway col-sm-3 column col-sm-3">
+                <div class="elm css-all-item-width25 col-sm-3 column">
                     <div class="col-container">
-                        <div class="elm css-img-footer3 shortcode single_image">
+                        <div class="elm css-img-footer shortcode single_image">
                             <img class="lazyloaded" src="./Assests/img/footer_03.png" alt="Pizza Take Away">
                         </div>
-                        <div class="elm css-textTitlePizzaTakeAway title-wrap">
+                        <div class="elm css-textHeadCamKet title-wrap">
                             <h3 class="title">Pizza Take Away</h3>
                         </div>
-                        <div class="elm css-textContentPizzaTakeAway text_block">
+                        <div class="elm css-textContentCamKet text_block">
                             <p>
                                 Lựa chọn cho mình một hướng đi mới để tạo nên sự khác biệt, mô hình Pizza take away -
                                 pizza mang đi giúp khách hàng tiết kiệm thời gian, đem đến sự tiện lợi tối ưu trong việc
@@ -367,15 +322,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="elm css-all-PhucVuChuyenNghiep col-sm-3 column col-sm-3">
+                <div class="elm css-all-item-width25 col-sm-3 column">
                     <div class="col-container">
-                        <div class="elm css-img-footer4 shortcode single_image">
+                        <div class="elm css-img-footer shortcode single_image">
                             <img class="lazyloaded" src="./Assests/img/footer_04.png" alt="Phục vụ chuyên nghiệp">
                         </div>
-                        <div class="elm css-textTitlePhucVuChuyenNghiep title-wrap">
+                        <div class="elm css-textHeadCamKet title-wrap">
                             <h3 class="title">Phục vụ chuyên nghiệp</h3>
                         </div>
-                        <div class="elm css-textContentPhucVuChuyenNghiep text_block">
+                        <div class="elm css-textContentCamKet text_block">
                             <p>
                                 Pizza Express cùng với đội ngũ nhân viên mang đầy sức trẻ và nhiệt huyết, chúng tôi luôn
                                 mong muốn đem lại cho khách hàng của mình chất lượng dịch vụ tốt nhất, luôn lắng nghe và
@@ -427,16 +382,16 @@
                 <div class="elm css-imgFooterLine shortcode single_image">
                     <img class="lazyloaded" src="./Assests/img/footer_line.png" alt="Pizza Express">
                 </div>
-                <div class="elm css-all-BanDo row row_inner">
-                    <div class="elm css-all-ViTri1 col-sm-3 column_inner">
+                <div class="elm row row_inner">
+                    <div class="elm css-all-ViTri-width25 col-sm-3 column_inner">
                         <div class="wrapper col-inner-container">
-                            <div class="elm css-imgSo1 shorcode single-image">
+                            <div class="elm css-imgSo shorcode single-image">
                                 <img class="lazyloaded" src="./Assests/img/so_01.png" alt="Địa chỉ số 1">
                             </div>
-                            <div class="elm textBaDinh text_block">
+                            <div class="elm textViTriSo text_block">
                                 <p>107 D3 Ngọc Khánh, Ba Đình</p>
                             </div>
-                            <div class="elm css-text-XemBanDo1">
+                            <div class="elm css-text-XemBanDo">
                                 <a href="#" class="button" title="Xem trên bản đồ">
                                     <i class="fa-location-arrow"></i>
                                     Xem trên bản đồ
@@ -444,15 +399,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elm css-all-ViTri2 col-sm-3 column_inner">
+                    <div class="elm css-all-ViTri-width25 col-sm-3 column_inner">
                         <div class="wrapper col-inner-container">
-                            <div class="elm css-imgSo2 shorcode single-image">
+                            <div class="elm css-imgSo shorcode single-image">
                                 <img class="lazyloaded" src="./Assests/img/so_02.png" alt="Địa chỉ số 2">
                             </div>
-                            <div class="elm textThanhXuan text_block">
+                            <div class="elm textViTriSo text_block">
                                 <p>4 Ngõ 332 Nguyễn Trãi, Thanh Xuân</p>
                             </div>
-                            <div class="elm css-text-XemBanDo2">
+                            <div class="elm css-text-XemBanDo">
                                 <a href="#" class="button" title="Xem trên bản đồ">
                                     <i class="fa-location-arrow"></i>
                                     Xem trên bản đồ
@@ -460,15 +415,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elm css-all-ViTri3 col-sm-3 column_inner">
+                    <div class="elm css-all-ViTri-width25 col-sm-3 column_inner">
                         <div class="wrapper col-inner-container">
-                            <div class="elm css-imgSo3 shorcode single-image">
+                            <div class="elm css-imgSo shorcode single-image">
                                 <img class="lazyloaded" src="./Assests/img/so_03.png" alt="Địa chỉ số 3">
                             </div>
-                            <div class="elm textCauGiay text_block">
+                            <div class="elm textViTriSo text_block">
                                 <p>6 Đồng Bát, Cầu Giấy</p>
                             </div>
-                            <div class="elm css-text-XemBanDo3">
+                            <div class="elm css-text-XemBanDo">
                                 <a href="#" class="button" title="Xem trên bản đồ">
                                     <i class="fa-location-arrow"></i>
                                     Xem trên bản đồ
@@ -476,15 +431,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elm css-all-ViTri4 col-sm-3 column_inner">
+                    <div class="elm css-all-ViTri-width25 col-sm-3 column_inner">
                         <div class="wrapper col-inner-container">
-                            <div class="elm css-imgSo4 shorcode single-image">
+                            <div class="elm css-imgSo shorcode single-image">
                                 <img class="lazyloaded" src="./Assests/img/so_04.png" alt="Địa chỉ số 4">
                             </div>
-                            <div class="elm textHoangMai text_block">
+                            <div class="elm textViTriSo text_block">
                                 <p>52 Kim Đồng, Hoàng Mai</p>
                             </div>
-                            <div class="elm css-text-XemBanDo4">
+                            <div class="elm css-text-XemBanDo">
                                 <a href="#" class="button" title="Xem trên bản đồ">
                                     <i class="fa-location-arrow"></i>
                                     Xem trên bản đồ
@@ -512,9 +467,10 @@
                 </div>
             </div>
         </div>
-    </footer>
-
+    </footer> 
     <!-- End Footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./Assests/js/giohang.js"></script>
     <script src="./Assests/js/main.js"></script>
 </body>
 

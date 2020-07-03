@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Assests/css/base.css">
+    <link rel="stylesheet" href="./Assests/css/gioHang.css">
     <link rel="stylesheet" href="./Assests/css/tienHanhThanhToan.css">
     <script src="https://kit.fontawesome.com/974cf27236.js" crossorigin="anonymous"></script>
     <link
@@ -57,6 +58,33 @@
                                     <span id="itemCount" style="display: inline; font-size: 12px;">1</span>
                                     <i class="fa fa-cart-arrow-down" style="margin-left: 10px;"></i>
                                 </a>
+                                <div class="container1">
+                                    <div class="cart-items">
+                                        <div class="cart-row">
+                                            <div class="cart-item cart-column">
+                                                <img src="./Assests/img/P1rs1.jpg" style="width: 40px;height: 50px;">
+                                                <span class="cart-item-title">P1. Beefy Pizza</span>
+                                                <span> - </span>
+                                                <span> S </span>
+                                                <span> - </span>
+                                                <spans> 1 </spans>
+                                            </div>
+                                            <div class="cart-quantity cart-column">
+                                                <button class="btn btn-danger" type="button"
+                                                    onclick="xoaGioHang($(this))">Xóa</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-total">
+                                        <strong class="cart-total-title" style="display: inline;">Tổng tiền:</strong>
+                                        <span class="cart-total-price">90000đ</span>
+                                    </div>
+                                    <a href="./tienHanhThanhToan.html">
+                                        <button class="btn btn-primary btn-purchase" type="button" id="emptyCart"
+                                            style="display: inline;">Tiến hành thanh toán</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -84,29 +112,25 @@
                         </div>
                         <div class="widget widget_nav_menu elm css-menu1">
                             <div class="menu-menu-container">
-                                <ul id="menu-menu" class="menu">
-                                    <li id="menu-item-74"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-2 current_page_item menu-item-74">
-                                        <a href="trangChu.html" aria-current="page">Trang chủ</a>
+                                <ul class="menu">
+                                    <li id="menu-item"
+                                        class="menu-item current-menu-item">
+                                        <a href="trangChu.html">Trang chủ</a>
                                     </li>
-                                    <li id="menu-item-208"
-                                        class="thucdon menu-item menu-item-type-custom menu-item-object-custom current_page_item menu-item-home menu-item-208">
-                                        <a href="thucDon.html" aria-current="page">Thực đơn</a>
+                                    <li id="menu-item"
+                                        class="thucdon menu-item current-menu-item">
+                                        <a href="trangChu.html#home_thucdon">Thực đơn</a>
                                     </li>
-                                    <li id="menu-item-78"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78">
+                                    <li id="menu-item"
+                                        class="menu-item">
                                         <a href="khuyenMai.html">Khuyến mại</a>
                                     </li>
-                                    <li id="menu-item-75"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menuitem-75">
+                                    <li id="menu-item"
+                                        class="menu-item">
                                         <a href="chinhSach.html">Chính sách</a>
                                     </li>
-                                    <li id="menu-item-83"
-                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-83">
-                                        <a href="blog.html">Blog</a>
-                                    </li>
-                                    <li id="menu-item-79"
-                                        class="menu-item menu-item-type-post menu-item-object-page menu-item-79">
+                                    <li id="menu-item"
+                                        class="menu-item">
                                         <a href="lienHe.html">Liên hệ</a>
                                     </li>
                                 </ul>
@@ -157,7 +181,7 @@
     <section id="menu" class="menu elm row">
         <div class="row-container container">
             <div class="wrap-columns">
-                <div class="left col-sm-4 column col-sm-4">
+                <div class="left col-sm-8 column col-sm-8">
                     <h2>Thông tin mua hàng</h2>
                     <form id="frmDangky">
                         <input type="text" name="" placeholder="Họ và tên" id="txtten">
@@ -171,37 +195,28 @@
                         </select>
                         <select>
                             <option>--- Chọn quận huyện ---</option>
-                            <option>Văn Giang</option>
-                            <option>Hai Bà Trưng</option>
-                            <option>Hoàng Mai</option>
+                            <option>Khoái Châu</option>
+                            <option>Thăng Long</option>
+                            <option>Quận 7</option>
                         </select>
-                        <textarea placeholder="Ví dụ: Bỏ hành tây, ớt chuông...." id="txtgc"></textarea>
+                        <textarea placeholder="Ví dụ: Bỏ hành tây, ớt chuông, nhiều tất cả mọi thứ...." id="txtgc"></textarea>
                     </form>
                 </div>
-                <div class="between col-sm-4 column col-sm-4">
-                    <h2>Thanh toán</h2>
-                    <p><i class="fas fa-sync-alt" style="margin-right: 15px;
-                    color: #a9001b;"></i>Thanh toán khi giao hàng(COD) <i class="far fa-money-bill-alt" style="margin-left: 38px;
-                    font-size: 20px;
-                    color: #a9001b;"></i>
-                        <br><br>
-                        Bạn chỉ phải thanh toán khi nhận được hàng
-                    </p>
-                </div>
+                
                 <div class="right col-sm-4 column col-sm-4">
-                    <h2>Đơn hàng ( 1 sản phẩm)</h2>
+                    <h2>Đơn hàng (1 sản phẩm)</h2>
                     <div class="sp"><img src="./Assests/img/P1rs1.jpg"><span>1</span>
                         <p>P1. Beefy Pizza - S</p>
-                        <h3>90.000<u>đ</u></h3>
+                        <h3>90000<u>đ</u></h3>
                     </div>
                     <div class="tien">
                         <p>Tạm tính</p>
-                        <h3>90.000<u>đ</u></h3>
+                        <h3>90000<u>đ</u></h3>
                         <h5>Phí vận chuyển</h5>
                     </div>
                     <div class="tongtien">
                         <p>Tổng cộng: </p>
-                        <h3>90.000<u>đ</u></h3>
+                        <h3>90000<u>đ</u></h3>
                     </div>
                     <div class="quayve">
                         <a href="gioHang.html">
@@ -214,24 +229,26 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript">
+    <script>
+        // Tiến hành thanh toán
         function KTTen(ten) {
-            rg1 = /[^~!@#$%&*()0-9]{1,50}/;
-            tim1 = ten.match(rg1);
+            var rg1 = /[^~!@#$%&*()0-9]{1,50}/;
+            var tim1 = ten.match(rg1);
             if (tim1 == ten)
                 return true;
             else
                 return false;
         }
         function KTDC(dc) {
-            rg2 = /[^~*&()^!@#]/;
-            tim2 = dc.match(rg2);
+            var rg2 = /[^~*&()^!@#]/;
+            var tim2 = dc.match(rg2);
             if (tim2 == dc)
-                return true;
-            else
                 return false;
+            else
+                return true;
 
         }
+
         function KTSDT(sdt) {
             var dong = /[0-9]{10}/;
             var KT = sdt.match(dong);
@@ -243,10 +260,11 @@
         var ten = document.querySelector('#txtten');
         var sdt = document.querySelector('#txtsdt');
         var dc = document.querySelector('#txtdc');
+        var them = document.querySelector('#txtgc');
+
         document.getElementById("btndh").addEventListener('click', function () {
             if ((KTTen(txtten.value) == true) && (KTSDT(txtsdt.value) == true) && (KTDC(txtdc.value) == true)) {
                 alert('Đặt hàng thành công');
-                this.attributes[0].value = "dathang.html";
             }
             if ((KTTen(txtten.value) == false) && (KTSDT(txtsdt.value) == true) && (KTDC(txtdc.value) == true)) {
                 alert("Vui lòng nhập lại tên!");
@@ -259,8 +277,8 @@
                 txtsdt.style.border = "2px solid red";
                 txtsdt.focus();
             }
-            if ((KTTen(txtten.value) == true) && (KTSDT(txtsdt.value) == false) && (KTDC(txtdc.value) == false)) {
-                alert("Vui lòng nhập lại địa chỉ!");
+            if ((KTTen(txtten.value) == true) && (KTSDT(txtsdt.value) == true) && (KTDC(txtdc.value) == false)) {
+                alert("Vui lòng nhập lại địa chỉ !");
                 txtdc.style.border = "2px solid red";
                 txtdc.focus();
             }
@@ -272,6 +290,9 @@
                 txtten.focus();
             }
         })
+
+        // end Tiến hành thanh toán
+
     </script>
     <!-- End content -->
 
@@ -279,15 +300,15 @@
     <section class="elm css-camKet row">
         <div class="row-container container">
             <div class="wrap-columns">
-                <div class="elm css-all-ChatLuongDanDau col-sm-3 column col-sm-3">
+                <div class="elm css-all-item-width25 col-sm-3 column">
                     <div class="col-container">
-                        <div class="elm css-img-footer1 shortcode single_image">
+                        <div class="elm css-img-footer shortcode single_image">
                             <img class="lazyloaded" src="./Assests/img/footer_01.png" alt="Chất lượng dẫn đầu">
                         </div>
-                        <div class="elm css-textTitleChatLuongDanDau title-wrap">
+                        <div class="elm css-textHeadCamKet title-wrap">
                             <h3 class="title">Chất lượng dẫn đầu</h3>
                         </div>
-                        <div class="elm css-textContentChatLuongDanDau text_block">
+                        <div class="elm css-textContentCamKet text_block">
                             <p>
                                 Chú trọng khâu tuyển chọn đội ngũ đầu bếp chuyên nghiệp, thực đơn của Pizza Express luôn
                                 được đổi mới, đa dạng với pizza nhiều hương vị, sandwich, mỳ ý và các món ăn nhanh khác.
@@ -295,15 +316,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="elm css-all-GiaHangDungGio col-sm-3 column col-sm-3">
+                <div class="elm css-all-item-width25 col-sm-3 column">
                     <div class="col-container">
-                        <div class="elm css-img-footer2 shortcode single_image">
+                        <div class="elm css-img-footer shortcode single_image">
                             <img class="lazyloaded" src="./Assests/img/footer_02.png" alt="Giao hàng đúng giờ">
                         </div>
-                        <div class="elm css-textTitleGiaoHangDungGio title-wrap">
+                        <div class="elm css-textHeadCamKet title-wrap">
                             <h3 class="title">Giao hàng đúng giờ</h3>
                         </div>
-                        <div class="elm css-textContentGiaoHangDungGio text_block">
+                        <div class="elm css-textContentCamKet text_block">
                             <p>
                                 Để tăng cường sự tin tưởng và yên tâm với khách hàng, Pizza Express cam kết luôn giao
                                 hàng đúng giờ và chi phí giao hàng rẻ nhất để đảm bảo khách hàng có thể nhận bánh trong
@@ -312,15 +333,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="elm css-all-PizzaTakeAway col-sm-3 column col-sm-3">
+                <div class="elm css-all-item-width25 col-sm-3 column">
                     <div class="col-container">
-                        <div class="elm css-img-footer3 shortcode single_image">
+                        <div class="elm css-img-footer shortcode single_image">
                             <img class="lazyloaded" src="./Assests/img/footer_03.png" alt="Pizza Take Away">
                         </div>
-                        <div class="elm css-textTitlePizzaTakeAway title-wrap">
+                        <div class="elm css-textHeadCamKet title-wrap">
                             <h3 class="title">Pizza Take Away</h3>
                         </div>
-                        <div class="elm css-textContentPizzaTakeAway text_block">
+                        <div class="elm css-textContentCamKet text_block">
                             <p>
                                 Lựa chọn cho mình một hướng đi mới để tạo nên sự khác biệt, mô hình Pizza take away -
                                 pizza mang đi giúp khách hàng tiết kiệm thời gian, đem đến sự tiện lợi tối ưu trong việc
@@ -329,15 +350,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="elm css-all-PhucVuChuyenNghiep col-sm-3 column col-sm-3">
+                <div class="elm css-all-item-width25 col-sm-3 column">
                     <div class="col-container">
-                        <div class="elm css-img-footer4 shortcode single_image">
+                        <div class="elm css-img-footer shortcode single_image">
                             <img class="lazyloaded" src="./Assests/img/footer_04.png" alt="Phục vụ chuyên nghiệp">
                         </div>
-                        <div class="elm css-textTitlePhucVuChuyenNghiep title-wrap">
+                        <div class="elm css-textHeadCamKet title-wrap">
                             <h3 class="title">Phục vụ chuyên nghiệp</h3>
                         </div>
-                        <div class="elm css-textContentPhucVuChuyenNghiep text_block">
+                        <div class="elm css-textContentCamKet text_block">
                             <p>
                                 Pizza Express cùng với đội ngũ nhân viên mang đầy sức trẻ và nhiệt huyết, chúng tôi luôn
                                 mong muốn đem lại cho khách hàng của mình chất lượng dịch vụ tốt nhất, luôn lắng nghe và
@@ -389,16 +410,16 @@
                 <div class="elm css-imgFooterLine shortcode single_image">
                     <img class="lazyloaded" src="./Assests/img/footer_line.png" alt="Pizza Express">
                 </div>
-                <div class="elm css-all-BanDo row row_inner">
-                    <div class="elm css-all-ViTri1 col-sm-3 column_inner">
+                <div class="elm row row_inner">
+                    <div class="elm css-all-ViTri-width25 col-sm-3 column_inner">
                         <div class="wrapper col-inner-container">
-                            <div class="elm css-imgSo1 shorcode single-image">
+                            <div class="elm css-imgSo shorcode single-image">
                                 <img class="lazyloaded" src="./Assests/img/so_01.png" alt="Địa chỉ số 1">
                             </div>
-                            <div class="elm textBaDinh text_block">
+                            <div class="elm textViTriSo text_block">
                                 <p>107 D3 Ngọc Khánh, Ba Đình</p>
                             </div>
-                            <div class="elm css-text-XemBanDo1">
+                            <div class="elm css-text-XemBanDo">
                                 <a href="#" class="button" title="Xem trên bản đồ">
                                     <i class="fa-location-arrow"></i>
                                     Xem trên bản đồ
@@ -406,15 +427,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elm css-all-ViTri2 col-sm-3 column_inner">
+                    <div class="elm css-all-ViTri-width25 col-sm-3 column_inner">
                         <div class="wrapper col-inner-container">
-                            <div class="elm css-imgSo2 shorcode single-image">
+                            <div class="elm css-imgSo shorcode single-image">
                                 <img class="lazyloaded" src="./Assests/img/so_02.png" alt="Địa chỉ số 2">
                             </div>
-                            <div class="elm textThanhXuan text_block">
+                            <div class="elm textViTriSo text_block">
                                 <p>4 Ngõ 332 Nguyễn Trãi, Thanh Xuân</p>
                             </div>
-                            <div class="elm css-text-XemBanDo2">
+                            <div class="elm css-text-XemBanDo">
                                 <a href="#" class="button" title="Xem trên bản đồ">
                                     <i class="fa-location-arrow"></i>
                                     Xem trên bản đồ
@@ -422,15 +443,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elm css-all-ViTri3 col-sm-3 column_inner">
+                    <div class="elm css-all-ViTri-width25 col-sm-3 column_inner">
                         <div class="wrapper col-inner-container">
-                            <div class="elm css-imgSo3 shorcode single-image">
+                            <div class="elm css-imgSo shorcode single-image">
                                 <img class="lazyloaded" src="./Assests/img/so_03.png" alt="Địa chỉ số 3">
                             </div>
-                            <div class="elm textCauGiay text_block">
+                            <div class="elm textViTriSo text_block">
                                 <p>6 Đồng Bát, Cầu Giấy</p>
                             </div>
-                            <div class="elm css-text-XemBanDo3">
+                            <div class="elm css-text-XemBanDo">
                                 <a href="#" class="button" title="Xem trên bản đồ">
                                     <i class="fa-location-arrow"></i>
                                     Xem trên bản đồ
@@ -438,15 +459,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elm css-all-ViTri4 col-sm-3 column_inner">
+                    <div class="elm css-all-ViTri-width25 col-sm-3 column_inner">
                         <div class="wrapper col-inner-container">
-                            <div class="elm css-imgSo4 shorcode single-image">
+                            <div class="elm css-imgSo shorcode single-image">
                                 <img class="lazyloaded" src="./Assests/img/so_04.png" alt="Địa chỉ số 4">
                             </div>
-                            <div class="elm textHoangMai text_block">
+                            <div class="elm textViTriSo text_block">
                                 <p>52 Kim Đồng, Hoàng Mai</p>
                             </div>
-                            <div class="elm css-text-XemBanDo4">
+                            <div class="elm css-text-XemBanDo">
                                 <a href="#" class="button" title="Xem trên bản đồ">
                                     <i class="fa-location-arrow"></i>
                                     Xem trên bản đồ
@@ -474,9 +495,10 @@
                 </div>
             </div>
         </div>
-    </footer>
-
+    </footer> 
     <!-- End Footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./Assests/js/giohang.js"></script>
     <script src="./Assests/js/main.js"></script>
 </body>
 

@@ -8,6 +8,37 @@ body.css-system .css-banner {
 
 /* Left slide */
 
+/*scoll to top*/
+
+.scrollTop {
+    border-radius: 50px;
+    position: fixed;
+    right: 1%;
+    bottom: 10px;
+    background-color: #c00a27;
+    padding: 15px;
+    opacity: 0;
+    z-index: 99999999999999;
+    transition: all 0.4s ease-in-out 0s;
+}
+  
+  .scrollTop a {
+    font-size: 18px;
+    color: #fff;
+  }
+/*end scoll to top*/
+
+
+/* mo ta chuyn dong */
+
+.chuslide {
+    color: #c00a27;
+    font-size: 25px;
+    font-family: Sriracha;
+    margin: 5px 0; 
+    padding: 10px 0;
+}
+
 body.css-system .css-slide{
     background: #f6f6f6;
 }
@@ -21,10 +52,6 @@ body.css-system .css-left-slide{
 
 body.css-system .css-text-left-slide{
     display: block;
-}
-
-.title-wrap {
-    width: 100%;
 }
 
 body.css-system .css-text-left-slide.title,
@@ -59,7 +86,6 @@ body.css-system .css-right-slide{
     display: none;
     position: relative;
     width: 100%;
-    /* -ms-touch-action: pan-y; */
 }
 
 .owl-carousel .owl-wrapper-outer {
@@ -68,14 +94,14 @@ body.css-system .css-right-slide{
     width: 100%;
 }
 
-.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+/* .owl-carousel .owl-wrapper, .owl-carousel .owl-item {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     -webkit-transform: translate3d(0,0,0);
     -moz-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
-}
+} */
 
 .owl-carousel .owl-wrapper:after {
     content: ".";
@@ -328,12 +354,12 @@ body.css-system .css-click-content.vertical_tabs>.kc_wrapper>ul.ui-tabs-nav>li>a
     overflow: hidden;
 }
 
-.tabs_nav>.ui-tabs-active, .tabs_nav>.ui-tabs-active:hover, 
+/* .tabs_nav>.ui-tabs-active, .tabs_nav>.ui-tabs-active:hover, 
 .kc_tabs_nav>.ui-tabs-active>a, 
 .kc_tabs_nav>.ui-tabs-active>a:hover {
     color: #555;
     display: block;
-}
+} */
 
 .tabs_nav>li {
     list-style: none;
@@ -584,7 +610,7 @@ body.css-system .css-979841 .tabs_nav, body.css-system .css-979841 .tabs_nav>li 
 
 /* pizza */
 
-body.css-system .css-pizza .tab {
+.css-pizza .tab {
     background-color: rgba(255,255,255,0);
 }
 .tabs_nav~.tab.ui-tabs-body-active {
@@ -624,7 +650,7 @@ ul.dc_columns {
     flex-flow: row wrap;
 }
 
-ul.dc_columns li.product_item {
+.product_item {
     width: calc(25% - 37.5px);
     margin-right: 35px;
     border: 1px solid #ddd;
@@ -676,7 +702,7 @@ ul.dc_columns li.product_item .product_hover .woocommerce-loop-product__title {
     color: #c00a27;
 }
 
-ul.dc_columns li.product_item .woocommerce-loop-product__title {
+.woocommerce-loop-product__title {
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -701,7 +727,7 @@ ul.dc_columns li.product_item .product_hover img {
     max-width: 100%;
 }
 
-ul.dc_columns li.product_item span.price {
+.price {
     font-weight: 600!important;
     color: #c00a27!important;
     font-size: 14px;
@@ -722,15 +748,15 @@ ul.dc_columns li.product_item span.price .woocommerce-Price-currencySymbol {
     margin-left: 5px;
 }
 
-ul.dc_columns li.product_item .cart {
+.cart {
     width: 100%;
     float: left;
     display: block;
     clear: both;
-    margin-bottom: 0;
     position: relative;
     z-index: 9999;
     padding: 0 10px;
+    margin-bottom: 25px;
 }
 ul.dc_columns li.product_item .variations_form.cart table.variations .value ul {
     margin: 0;
@@ -889,8 +915,9 @@ ul.dc_columns li.product_item .cart button.button {
 ul.dc_columns li.product_item .variations_form.cart .woocommerce-variation-add-to-cart {
     text-align: center;
 }
-ul.dc_columns li.product_item .variations_form.cart table.variations {
-    width: 100%;
+.variations {
+    width: 55%;
+    margin-left: 50px;
     background: #f5f5f5;
     border-radius: 25px;
     font-size: 12px;
@@ -899,6 +926,32 @@ ul.dc_columns li.product_item .variations_form.cart table.variations {
 }
 ul.dc_columns li.product_item .cart button.button:hover {
     background: #c00a27;
+}
+/* Suon BBQ */
+.dc_onsale {
+    position: absolute;
+    z-index: 9;
+    top: 5px;
+    left: 5px;
+    background: #c00a27;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#price-suonBBQ{
+    margin-bottom: 25px;
+}
+/* content */
+
+body.css-system .css-click-content .tabs_nav li.ui-tabs-active a, 
+body.css-system .css-click-content.vertical_tabs>.wrapper>ul.ui-tabs-nav>li.ui-tabs-active>a {
+    color: #c00a27;
 }
 /* Begin combo */
 
@@ -943,9 +996,6 @@ body.css-system .css-combo {
 
 body.css-system .css-text-SieuHapDan {
     display: block;
-}
-.title-wrap {
-    width: 100%;
 }
 
 body.css-system .css-text-SieuHapDan.title, body.css-system .css-text-SieuHapDan .title, body.css-system .css-text-SieuHapDan .title a.title_link {
@@ -1033,110 +1083,91 @@ body.css-system .css-phanHoi {
     padding-bottom: 60px;
 }
 
-body.css-system .css-textTitle .title, 
-body.css-system .css-textTitle .title, 
-body.css-system .css-textTitle .title a.title_link {
-    color: #000;
-    font-size: 16px;
-    font-weight: 600;
+.css-textTitle{
+    margin-bottom: 50px;
+}
+.css-textTitle .title {
+    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 30px;
 }
 
-.swiper-container {
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
-    width: 100%;
-}
-
-.swiper-container-multirow>.swiper-wrapper {
-    /* -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap; */
-    flex-wrap: wrap;
-}
-
-.swiper-wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    -o-transition-property: transform;
-    transition-property: transform;
-    transition-property: transform,-webkit-transform;
-    transition-property: transform,-webkit-transform;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-}
-
-.swiper-slide {
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    -o-transition-property: transform;
-    transition-property: transform;
-    transition-property: transform,-webkit-transform;
-    transition-property: transform,-webkit-transform;
-}
-
-.swiper-container .swiper-notification {
-    position: absolute;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    opacity: 0;
-    z-index: -1000;
-}
-
-.testi_content .testi-pagination {
+.testi_item{
+    
+    width: 80%;
+    margin: auto;
     text-align: center;
-    margin-top: 10px;
 }
 
-.testi_content .testi-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: #c00a27;
+.testi_thumb{
+    position: relative;
+    top:-20px;
 }
 
-.testi_content .testi-pagination .swiper-pagination-bullet {
-    margin: 0 3px;
-    background: #FFF;
-    opacity: 1;
+.testi_name{
+    font-weight: 700;
+    padding-bottom: 10px;
 }
 
-.swiper-pagination-clickable .swiper-pagination-bullet {
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .prev, .next {
     cursor: pointer;
-}
-
-.swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #007aff;
-}
-
-.swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
+    position: absolute;
+    top: 43%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #c00d27;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 40%;
+      left: 47%;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
     display: inline-block;
-    border-radius: 100%;
-    background: #000;
-    opacity: .2;
-}
-
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+      background-color: #c00d27;
+  }
+  .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+  }
+  @keyframes fade {
+      from{opacity:.4}
+      to{opacity:1}
+  }
 /* End PhanHoi */
 
 
